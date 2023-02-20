@@ -327,7 +327,7 @@ html[light-mode="dark"] {
 }
 
 .dark-theme .nav-link:hover{
-color: #ffffff !important;
+color: var(--color-secondary) !important;
 }
 
 .dark-theme .first,
@@ -418,7 +418,7 @@ color: #ffffff !important;
       margin-right: auto;
       bottom: 0;
       width: 32%;
-      border-bottom: 3px solid #6a00bb;
+      border-bottom: 3px solid #ff004f;
   }
 
   .nav-item-hover::after {
@@ -429,7 +429,7 @@ color: #ffffff !important;
       height: 0.15em;
       bottom: 0;
       width: 0%;
-      background-color: #6a00bb;
+      background-color: #ff004f;
       transition: all ease-in-out 280ms;
   }
 
@@ -456,7 +456,7 @@ html[light-mode="light"] .nav-link{
   color: #000000 !important;
 }
 html[light-mode="light"] .nav-link:hover{
-  color: 	rgb(106, 0, 187) !important;
+  color: 	var(--color-primary) !important;
 }
 html[light-mode="light"] .navbar-brand:hover{
   color: #000000 !important;
