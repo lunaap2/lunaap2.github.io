@@ -9,7 +9,7 @@ const exp = [
     company: "HAVAS Media Group",
     cardImage: "assets/images/experience-page/havas-media.jpg",
     place: "Bogotá, Colombia",
-    time: "Dec. 2022 - Current", 
+    time: "Dec. 2022 - Current",
     desp:
         `Develop construct test and maintain data architectures,`
       + `Develop data set processes,`
@@ -54,6 +54,10 @@ const exp = [
     time: "Mar. 2021 - Jul. 2021",
     desp:
         `Develop a deep learning model to identify emotions over speech recognition,`
+      + `Search and collect data preparation,`
+      + `Deployment and integration,`
+      + `Model training and evaluation,`
+      + `Collaborate with stakeholders to define ethical considerations,`
   },
   {
     title: `Python Developer`,
