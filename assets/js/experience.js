@@ -5,54 +5,138 @@ AOS.init();
 const experiencecards = document.querySelector(".experience-cards");
 const exp = [
   {
-    title: "Software Development Intern",
-    cardImage: "assets/images/experience-page/flipkart.jpg",
-    place: "Flipkart",
-    time: "(May, 2020 - present)",
-    desp: "<li>Worked to migrate Flipkart lite’s product page to AMP pages so that they load up instantly.</li> <li>Made changes in the current progressive web app of Flipkart to react to different actions performed on AMP page.</li> <li>Created a node module called “fk-amp” which abstracts all the files and middlewares and can be easily imported and used from express server.</li>",
+    title: `Data Developer`,
+    company: "HAVAS Media Group",
+    cardImage: "assets/images/experience-page/havas-media.jpg",
+    place: "Bogotá, Colombia",
+    time: "Dec. 2022 - Current", 
+    desp:
+        `Develop construct test and maintain data architectures,`
+      + `Develop data set processes,`
+      + `Identify ways to improve data,`
+      + `Align architecture with business requirements,`
+      + `Conduct research for industry and business questions,`
+      + `Develop and maintain backend process and platform,`
   },
   {
-    title: "Student Developer",
-    cardImage: "assets/images/experience-page/gsoc.png",
-    place: "Google Summer Of Code",
-    time: "(Mar - Aug, 2019)",
-    desp: "<li>Worked with MOZILLA as a part of Google Summer Of Code.</li><li>Worked on Extension Activity Monitor which is a privileged extension for Firefox that uses the activityLog API (privileged API) to monitor the activities of the other installed extensions.</li><li>The activityLog API listens for logs from other installed extensions.</li>",
+    title: `Data Engineer`,
+    company: "KLYM",
+    cardImage: "assets/images/experience-page/klym.jpg",
+    place: "Bogotá, Colombia",
+    time: "May. 2022 - Dec. 2022",
+    desp:
+        `Develop construct test and maintain data architectures,`
+      + `Develop data set processes,`
+      + `Identify ways to improve data,`
+      + `Align architecture with business requirements,`
+      + `Conduct research for industry and business questions,`
+      + `Develop and maintain backend process and platform,`
   },
   {
-    title: "Research Intern",
-    cardImage: "assets/images/experience-page/IIT_Bombay.jpg",
-    place: "IIT, Bombay",
-    time: "(Dec, 19 - Jan, 20)",
-    desp: "<li>Worked on the project “LTI (Learning Tools Interoperability) 2.0 standards Implementation for ekShiksha.</li><li>Designed a software that would help faculty to create a quiz using the questions from the database based on his/her choice of topics and he should be provided with various facilities and options to create a quiz of his choice.</li>",
+    title: `Data Engineer`,
+    company: "NTT Data",
+    cardImage: "assets/images/experience-page/ntt-data.jpg",
+    place: "Bogotá, Colombia",
+    time: "Oct. 2021 - Apr. 2022",
+    desp:
+        `Develop construct test and maintain data architectures,`
+      + `Develop data set processes,`
+      + `Identify ways to improve data,`
+      + `Align architecture with business requirements,`
+      + `Conduct research for industry and business questions,`
+      + `Maintain and upgrade existing systems,`
+  },
+  {
+    title: `Business practices in AI`,
+    company: "Universidad Autonoma de Zacatecas",
+    cardImage: "assets/images/experience-page/uzacatecas.jpg",
+    place: "Zacatecas, Méxoco",
+    time: "Mar. 2021 - Jul. 2021",
+    desp:
+        `Develop a deep learning model to identify emotions over speech recognition,`
+  },
+  {
+    title: `Python Developer`,
+    company: "Rollup Consulting",
+    cardImage: "assets/images/experience-page/rollup-consulting.jpg",
+    place: "Bogotá, Colombia",
+    time: "Nov. 2019 - Oct. 2021",
+    desp:
+        `Writing effective and scalable codes,`
+      + `Improve functionality of existing systems,`
+      + `Provide technical solutions to user requirements,`
+      + `Designing and implementing robust applications,`
+      + `Developing and maintaining APIs,`
+      + `Maintain and upgrade existing systems,`
+  },
+  {
+    title: `BI Consultant`,
+    company: "Rollup Consulting",
+    cardImage: "assets/images/experience-page/rollup-consulting.jpg",
+    place: "Bogotá, Colombia",
+    time: "Apr. 2017 - Oct. 2021",
+    desp:
+        `Develop and maintain reports and dashboards,`
+      + `Develop and maintain data flows,`
+      + `Develop and maintain data warehouses,`
+      + `Develop and maintain ETL processes,`
+      + `Provide user support,`
+      + `Collaborate with other team members and stakeholders,`
   },
 ];
 
 const showCards2 = () => {
   let output = "";
-  exp.forEach(
-    ({ title, cardImage, place, time, desp }) =>
-      (output += `        
-    <div class="col gaap" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="100" data-aos-duration="400"> 
+  exp.forEach(({ title, cardImage, company, place, time, desp }) => {
+    const despArray = desp.split(",");
+    const despList = despArray.slice(0, -1).map((item) => `
+      <div class="item">
+        <i class="fa-solid fa-chevron-right icon color-primary"></i>
+        ${item}
+      </div>`).join("");
+
+    const titleArray = title.split(" ");
+    const titleColor = titleArray.slice(0, 1).map((item) => `
+      <span class="color-primary">${item}</span>`).join("");
+
+    const titleText = titleArray.slice(1, titleArray.length).map((item) => `
+      ${item}`).join("");
+
+    const fullTitle = titleColor + titleText;
+
+    output += `
+    <div class="col gaap" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="100" data-aos-duration="400">
       <div class="card card1">
         <img src="${cardImage}" class="featured-image"/>
         <article class="card-body">
           <header>
-            <div class="title">
-              <h3>${title}</h3>
+            <div class="items-container">
+              <div class="fw-company-title">
+                <i class="fa-solid fa-briefcase icon"></i> ${fullTitle}
+              </div>
+              <div class="item-date">
+                <i class="fas fa-calendar-alt icon"></i> ${time}
+              </div>
             </div>
-            <p class="meta">
-              <span class="pre-heading">${place}</span><br>
-              <span class="author">${time}</span>
-            </p>
-            <ol>
-              ${desp}
-            </ol>
+            <div class="items-container">
+              <div class="company-name">
+                ${company}
+              </div>
+              <!--
+              <div class="company-place">
+                ${place}
+              </div>
+              -->
+            </div>
+
+            ${despList}
           </header>
         </article>
       </div>
     </div>
-      `)
-  );
+  `;
+  });
+
   experiencecards.innerHTML = output;
 };
 document.addEventListener("DOMContentLoaded", showCards2);
@@ -91,14 +175,14 @@ const showCards = () => {
   let output = "";
   volunteershipcards.forEach(
     ({ title, cardImage, description }) =>
-      (output += `        
+      (output += `
       <div class="card volunteerCard" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="100" data-aos-duration="600" style="height: 550px;width:400px">
-      
+
       <img src="${cardImage}" height="250" width="65" class="card-img" style="border-radius:10px">
       <div class="content">
           <h2 class="volunteerTitle">${title}</h2><br>
           <p class="copy">${description}</p></div>
-      
+
       </div>
       `)
   );
@@ -206,7 +290,7 @@ const showCards3 = () => {
   let output = "";
   mentor.forEach(
     ({ title, image, subtitle, desp }) =>
-      (output += `  
+      (output += `
       <div class="blog-slider__item swiper-slide">
         <div class="blog-slider__img">
             <img src="${image}" alt="">
@@ -215,7 +299,7 @@ const showCards3 = () => {
           <div class="blog-slider__title">${title}</div>
           <span class="blog-slider__code">${subtitle}</span>
           <div class="blog-slider__text">${desp}</div>
-          <a href="#" class="blog-slider__button">Read More</a>   
+          <a href="#" class="blog-slider__button">Read More</a>
         </div>
       </div>
       `)

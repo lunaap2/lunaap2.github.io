@@ -467,6 +467,32 @@ ul ol {
   color: var(--head-col);
 }
 
+.fw-company-title {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-left: 3rem;
+  margin-bottom: 1rem;
+}
+
+.company-name {
+  font-weight: 700;
+  font-size: 1.1rem;
+  font-style: oblique;
+  margin-left: 5rem;
+  margin-bottom: 1rem;
+  margin-top: -1.3rem;
+}
+
+.company-place {
+  font-weight: 700;
+  font-size: 0.8rem;
+  font-style: oblique;
+  margin-left: 5rem;
+  margin-bottom: 1rem;
+  margin-top: -2rem;
+  color: var(--color-text-primary);
+}
+
 /*Hackathon Section Starts*/
 
 .blog-slider {
