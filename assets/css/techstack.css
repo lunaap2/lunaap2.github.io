@@ -174,11 +174,24 @@ html[light-mode="light"] .tech_card img{
     font-size: 2.5rem;
     opacity: .7;
 }
+
+.techstacks_icons .techstack_icon svg {
+    font-size: 2.5rem;
+    opacity: .7;
+}
+
 html[light-mode="light"] .techstacks_icons .techstack_icon i {
     font-size: 2.5rem;
     opacity: 1;
 }
+
 div.techstack_icon>i:hover {
+    opacity: 1;
+    transition: opacity .2s linear;
+    transform: scale(1.3);
+}
+
+div.techstack_icon>svg:hover {
     opacity: 1;
     transition: opacity .2s linear;
     transform: scale(1.3);
@@ -210,6 +223,26 @@ div.techstack_icon>i.fa-bootstrap {
 
 div.techstack_icon>i.fa-js-square {
     color: #F0DB4F;
+}
+
+div.techstack_icon.power_bi_icon {
+    color: #f3da35;
+    width: 3.5rem;
+}
+
+div.techstack_icon.database_icon {
+    color: #b1b1b1;
+    width: 3.5rem;
+}
+
+div.techstack_icon.tensorflow_icon {
+    color: #e4640e;
+    width: 3.5rem;
+}
+
+div.techstack_icon.keras_icon {
+    color: #d10000;
+    width: 3.5rem;
 }
 
 div.techstack_icon>i.fa-python {

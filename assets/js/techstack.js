@@ -5,77 +5,67 @@ AOS.init();
 const techStackCards = document.querySelector(".techstack-box");
 const techStack = [
   {
-    langImage: "assets/images/techstack-page/html.png",
-    langName: "HyperText Markup Language",
-    langDesc: "<li>The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser</li>",
-  },
-  {
-    langImage: "assets/images/techstack-page/css.png",
-    langName: "Cascading Style Sheets",
-    langDesc: "<li>Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML</li>",
-  },
-  {
-    langImage: "assets/images/techstack-page/javascript.png",
-    langName: "JavaScript",
-    langDesc: "<li>JavaScript, often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS</li>",
-  },
-  {
-    langImage: "assets/images/techstack-page/node.png",
-    langName: "Node",
-    langDesc: "<li>Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser</li>",
-  },
-  {
     langImage: "assets/images/techstack-page/python.png",
     langName: "Python",
-    langDesc: "<li>Python is an interpreted high-level general-purpose programming language</li>",
-  },
-  {
-    langImage: "assets/images/techstack-page/cpp.png",
-    langName: "C++",
-    langDesc: "<li>C++ is a general-purpose programming language created by Bjarne Stroustrup as an extension of the C programming language, or C with Classes</li>",
+    langDesc: "A high-level, interpreted programming language known for its simplicity, readability, and flexibility. It is commonly used for data analysis, scientific computing, web development, and artificial intelligence.",
   },
   {
     langImage: "assets/images/techstack-page/git.png",
     langName: "Git",
-    langDesc: "<li>Git is software for tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development.</li>",
-  },
-  {
-    langImage: "assets/images/techstack-page/bootstrap.png",
-    langName: "Bootstrap",
-    langDesc: "<li>Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development</li>",
-  },
-  {
-    langImage: "assets/images/techstack-page/react.png",
-    langName: "React",
-    langDesc: "<li>React is a free and open-source front-end JavaScript library for building user interfaces based on UI components</li>",
+    langDesc: "A version control system used for tracking changes in source code during software development. It allows multiple developers to collaborate on the same codebase, manage versions of their code, and revert to previous versions if necessary.",
   },
   {
     langImage:"assets/images/techstack-page/c.png",
     langName:"C",
-    langDesc:"<li>C is a general-purpose, procedural computer programming language supporting structured programming, lexical variable scope, and recursion, with a static type system</li>"
+    langDesc:"A general-purpose, low-level programming language that is known for its efficiency, speed, and ability to directly manipulate computer memory. It is commonly used for system programming, operating systems, and embedded systems."
+  },
+  {
+    langImage: "assets/images/techstack-page/cpp.png",
+    langName: "C++",
+    langDesc: "A general-purpose, high-level programming language that is an extension of the C language. It is known for its flexibility, efficiency, and object-oriented programming capabilities. It is commonly used for developing complex applications, such as video games, operating systems, and scientific simulations.",
+  },
+  {
+    langImage: "assets/images/techstack-page/powerbi.png",
+    langName: "PowerBI",
+    langDesc: "A business analytics service by Microsoft that provides interactive visualizations and business intelligence capabilities with an interface that is user-friendly for non-technical users. It is used to create reports and dashboards that can be shared with others in an organization."
+  },
+  {
+    langImage: "assets/images/techstack-page/database.png",
+    langName: "Database",
+    langDesc: " A structured collection of data stored in a computer that can be accessed and managed by computer programs. Databases are commonly used for storing and retrieving information in a systematic way."
+  },
+  {
+    langImage: "assets/images/techstack-page/tensorflow.png",
+    langName: "TensorFlow",
+    langDesc: "An open-source machine learning library developed by Google for building and training machine learning models. It provides a flexible architecture for building and deploying large-scale machine learning models across different platforms."
+  },
+  {
+    langImage: "assets/images/techstack-page/keras.png",
+    langName: "Keras",
+    langDesc: "An open-source neural network library written in Python that provides a user-friendly interface for building and training deep learning models. It is built on top of TensorFlow and provides a simpler way to build deep learning models than using TensorFlow directly."
   },
 ];
 
 const displayTechStacksCards = () => {
   const entireCardTemplate =
   techStack.map((stack)=> {
-      return `        
-    <div class="row page-content techstackcards" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="0" data-aos-duration="400"> 
-        <div class="tech_card">
-            <div class="card_img">
-                <img src ="${stack.langImage}" class="featured_image">
-            </div>
-            <div class="card_header">
-                <header>
-                    <div class="text-center langName">
-                        <h4>${stack.langName}</h4>
-                    </div>
-                </header>
-                <ul class="description">
-                ${stack.langDesc}
-            </ul>
-            </div>
+      return `
+    <div class="row page-content techstackcards" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="0" data-aos-duration="400">
+      <div class="tech_card">
+        <div class="card_img">
+            <img src ="${stack.langImage}" class="featured_image">
         </div>
+        <div class="card_header">
+          <header>
+            <div class="text-center langName">
+                <h4>${stack.langName}</h4>
+            </div>
+          </header>
+          <div class="description">
+             ${stack.langDesc}
+          </div>
+        </div>
+      </div>
     </div>
       `}).join('');
   techStackCards.innerHTML = entireCardTemplate;
