@@ -5,11 +5,28 @@ AOS.init();
 const experiencecards = document.querySelector(".experience-cards");
 const exp = [
   {
+    title: `Data Lead`,
+    company: "Dentsu",
+    cardImage: "assets/images/experience-page/dentsu.jpeg",
+    place: "Bogotá, Colombia",
+    time: "Ago. 2023 - Current",
+    desp:
+        `Developed constructed tested and maintained data architectures,`
+      + `Developed data set processes,`
+      + `Identified ways to improve data,`
+      + `Aligned architecture with business requirements,`
+      + `Conducted research for industry and business questions,`
+      + `Developed and maintained backend process and platform,`
+      + `Lead a team of data engineers and analysts,`
+      + `Mentored junior data engineers and analysts,`
+      + `Delivered data-driven solutions that met the needs of the organization,`
+  },
+  {
     title: `Data Developer`,
     company: "HAVAS Media Group",
     cardImage: "assets/images/experience-page/havas-media.jpg",
     place: "Bogotá, Colombia",
-    time: "Dec. 2022 - Current",
+    time: "Dec. 2022 - Jul. 2023",
     desp:
         `Develop construct test and maintain data architectures,`
       + `Develop data set processes,`
