@@ -5,6 +5,19 @@ AOS.init();
 const experiencecards = document.querySelector(".experience-cards");
 const exp = [
   {
+    title: `Professor of Data Structures`,
+    company: "INTER",
+    cardImage: "assets/images/experience-page/inter.jpg",
+    place: "Bogotá, Colombia",
+    time: "Feb. 2024 - Current",
+    desp:
+      `Developed and delivered lectures,`
+      + `Developed and graded assignments,`
+      + `Developed and graded quizzes and exams,`
+      + `Developed and graded projects,`
+      + `Developed and graded labs,`
+  },
+  {
     title: `Data Lead`,
     company: "Dentsu",
     cardImage: "assets/images/experience-page/dentsu.jpeg",
@@ -20,6 +33,20 @@ const exp = [
       + `Lead a team of data engineers and analysts,`
       + `Mentored junior data engineers and analysts,`
       + `Delivered data-driven solutions that met the needs of the organization,`
+  },
+  {
+    title: `Professor of DS and DB`,
+    company: "INTER",
+    cardImage: "assets/images/experience-page/inter.jpg",
+    place: "Bogotá, Colombia",
+    time: "Ago. 2023 - Dec. 2023",
+    desp:
+      `Professor of the course "Data Structures" and "Data Bases",`
+      + `Developed and delivered lectures,`
+      + `Developed and graded assignments,`
+      + `Developed and graded quizzes and exams,`
+      + `Developed and graded projects,`
+      + `Developed and graded labs,`
   },
   {
     title: `Data Developer`,
