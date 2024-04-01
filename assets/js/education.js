@@ -1,212 +1,275 @@
-AOS.init();
-
-// MOOCs Cards
-
-const moocs = document.querySelector(".moocs");
-const moocscards = [
-  {
-    title: "Data Science",
-    cardImage: "assets/images/education-page/coursera2.svg",
-    moocLink: "https://www.coursera.org/browse/data-science",
-    mockPlatform: "Coursera",
-  },
-  {
-    title: "Cryptography",
-    cardImage: "assets/images/education-page/udemy.svg",
-    moocLink: "https://www.udemy.com/course/cryptography-for-beginners/",
-  mockPlatform: "Coursera",
-  },
-  {
-    title: "Machine Learning",
-    cardImage: "assets/images/education-page/coursera2.svg",
-    moocLink: "https://www.coursera.org/learn/machine-learning",
-    mockPlatform: "Coursera",
-  },
-  {
-    title: "Introduction to HTML 5",
-    cardImage: "assets/images/education-page/udacity.svg",
-    moocLink: "https://www.udacity.com/course/intro-to-html-and-css--ud001",
-    mockPlatform: "Coursera",
-  },
-  {
-    title: "Introduction to CSS 3",
-    cardImage: "assets/images/education-page/udacity.svg",
-    moocLink: "https://www.udacity.com/course/intro-to-html-and-css--ud001",
-    mockPlatform: "Coursera",
-  },
-  {
-    title: "Javascript",
-    cardImage: "assets/images/education-page/udacity.svg",
-    moocLink: "https://www.udacity.com/course/intro-to-javascript--ud803",
-    mockPlatform: "Coursera",
-  },
-  {
-    title: "Bootstrap 4",
-    cardImage: "assets/images/education-page/udemy.svg",
-    moocLink: "https://www.udemy.com/course/bootstrap-4-tutorials/",
-    mockPlatform: "Coursera",
-  },
-  {
-    title: "Intro to React",
-    cardImage: "assets/images/education-page/edx.svg",
-    moocLink: "https://www.edx.org/learn/reactjs",
-    mockPlatform: "Coursera",
-  },
-  {
-    title: "Intro to React Native",
-    cardImage: "assets/images/education-page/coursera2.svg",
-    moocLink:
-      "https://www.coursera.org/lecture/react-native/introduction-to-react-native-Eax0D",
-    mockPlatform: "Coursera",
-  },
-  {
-    title: "NodeJS, Express and MongoDB",
-    cardImage: "assets/images/education-page/coursera2.svg",
-    moocLink: "https://www.coursera.org/learn/server-side-nodejs",
-    mockPlatform: "Coursera",
-  },
-  {
-    title: "XML-AJAX",
-    cardImage: "assets/images/education-page/udemy.svg",
-    moocLink: "https://www.udemy.com/course/xml-from-beginner-to-expert/",
-    mockPlatform: "Coursera",
-  },
-  {
-    title: "Data Structures & Algorithms",
-    cardImage: "assets/images/education-page/udacity.svg",
-    moocLink:
-      "https://www.udacity.com/course/data-structures-and-algorithms-nanodegree--nd256",
-    mockPlatform: "Coursera",
-  },
-];
-
-const experience = [
-  {
-    img: "assets/images/education-page/c1.png",
-  },
-  {
-    img: "assets/images/education-page/c2.jpg",
-  },
-  {
-    img: "assets/images/education-page/c3.png",
-  },
-  {
-    img: "assets/images/education-page/c4.png",
-  },
-  {
-    img: "assets/images/education-page/c5.jpg",
-  },
-];
-
-let currentItem = 0;
-
-const img = document.getElementById("image");
-
-const prevBtn = document.querySelector("#prevBtn");
-const nextBtn = document.querySelector("#nextBtn");
-
-window.addEventListener("DOMContentLoaded", function () {
-  showExperience();
-});
-
-function showExperience() {
-  setInterval(function () {
-    if (currentItem === experience.length) {
-      currentItem = 0;
+const education_cards = document.querySelector(".education-cards");
+const professional_education = [
+    {
+        title: `M.Sc in Artificial Intelligence`,
+        institution: "Universidad Internacional de la Rioja (UNIR)",
+        cardImage: "assets/img/education/unir.png",
+        place: "Bogotá, Colombia",
+        time: "2021 - Current (On Hold)",
+        dissertation_title: `Análisis para la identificación del trastorno depresivo mediante Twitter`,
+        link_dt: `#`
+    },
+    {
+        title: `B.Sc in Computer Science`,
+        institution: "Escuela Colombiana de Ingeniería Julio Garavito (ECI)",
+        cardImage: "assets/img/education/eci.png",
+        place: "Bogotá, Colombia",
+        time: "2011 - 2016",
+        dissertation_title: `Minería de texto histórica - colaboración al proyecto "Revealing Cooperation and Conflict Project"`,
+        link_dt: `https://repositorio.escuelaing.edu.co/handle/001/521`
+    },
+    {
+        title: `B.Sc in Computer Science`,
+        institution: "Servicio Nacional de Aprendizaje (SENA)",
+        cardImage: "assets/img/education/sena.svg",
+        place: "Bogotá, Colombia",
+        time: "2009 - 2010",
+        dissertation_title: "",
+        link_dt: "#"
     }
-    const item = experience[currentItem];
-    img.src = item.img;
-    currentItem++;
-  }, 3000);
-}
-
-const showCards = () => {
-  let output = "";
-  moocscards.forEach(
-    ({ title, moocLink, mockPlatform}) =>
-    (output += `
-        <div class="col-6 column">
-          <i class="fa-solid fa-chevron-right icon color-primary"></i>
-          <span class="color-secondary fw-bold">${mockPlatform} : </span>
-          <a href="${moocLink}" class="link-neon" target="_blank">
-            ${title}
-          </a>
-        </div>
-      `)
-  );
-  // moocs.innerHTML = output;
-};
-document.addEventListener("DOMContentLoaded", showCards);
-
-/* Badges*/
-
-const bagdes = document.querySelector(".badges");
-const badgesection = [
-  {
-    title: "Google Developer Essentials",
-    image: "assets/images/education-page/badge1.png",
-    description: "Earned May 20, 2020",
-  },
-  {
-    title: "VM Migration",
-    image: "assets/images/education-page/badge2.png",
-    description: "Earned June 20, 2020",
-  },
-  {
-    title: "G Suite Essentials",
-    image: "assets/images/education-page/badge3.png",
-    description: "Earned July 20, 2020",
-  },
 ];
 
-const showCards1 = () => {
-  let output = "";
-  badgesection.forEach(
-    ({ title, image, description }) =>
-      (output += `
-      <div class="col-lg-4 col-md-6 p-2" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="600">
-        <img class="img-fluid d-block mb-3 mx-auto hvr-grow" src="${image}" alt="Card image cap" width="200">
-          <div class="text-center font-weight-bolder" style="font-size: 1.3em;">${title}</div>
-          <div class="text-center text-muted font-weight-bolder p-2">${description}</div>
-      </div>`)
-  );
-  bagdes.innerHTML = output;
+const show_pro_education = () => {
+    let output = "";
+    professional_education.forEach(({ title, institution, cardImage, place, time, dissertation_title, link_dt }) => {
+
+        const titleArray = title.split(" ");
+        const titleColor = titleArray.slice(0, 1).map((item) => `<span class="color-primary">${item}</span>`).join("");
+        const titleText = titleArray.slice(1, titleArray.length).map((item) => `${item}`).join(" ");
+
+        const fullTitle = titleColor + " " + titleText;
+
+        dissertation_title_div = "";
+
+        if (dissertation_title != "") {
+            dissertation_title_div = `
+                <div>
+                    <p>
+                        <span class="color-primary"><strong>Dissertation Title:</strong></span>
+                        <a href="${link_dt}" target="_blank">
+                            ${dissertation_title}
+                        </a>
+                    </p>
+                </div>`;
+        }
+
+        output += `
+            <div class="resume-item">
+                <h4>${fullTitle}</h4>
+                <h5 class="item-date">
+                    <i class="fas fa-calendar-alt icon" style="margin-right:10px"></i>
+                    ${time}
+                </h5>
+                <div class="items-container">
+                    <div class="company-name">
+                        <img
+                            src="${cardImage}"
+                            alt=""
+                            width="24px"
+                            height="24px"
+                            style="background-color: white; padding: 2px; border-radius: 25%;"
+                        >
+                        ${institution}
+                    </div>
+                    <!--
+                    <div class="company-place">
+                        ${place}
+                    </div>
+                    -->
+                </div>
+                ${dissertation_title_div}
+            </div>`;
+
+    });
+
+    education_cards.innerHTML = output;
 };
-document.addEventListener("DOMContentLoaded", showCards1);
+document.addEventListener("DOMContentLoaded", show_pro_education);
 
-/* Timeline Section*/
 
-$(function () {
-  window.sr = ScrollReveal();
-
-  if ($(window).width() < 850) {
-    if ($(".timeline-content").hasClass("js--fadeInLeft")) {
-      $(".timeline-content")
-        .removeClass("js--fadeInLeft")
-        .addClass("js--fadeInRight");
+// MOOCs
+const education_mooc_cards = document.querySelector(".education-moocs-cards");
+const mooc_education = [
+    {
+        title: `Professional Certificate in Google Project Management`,
+        platform: "Coursera",
+        cardImage: "assets/img/education/coursera.svg",
+        instructor: "Google",
+        time: "2024 - Current",
+        courses: [
+            {
+                title: `Foundations of Project Management`,
+                link: `https://www.coursera.org/account/accomplishments/verify/48BMTF6WDHTV`
+            },
+            {
+                title: `Project Initiation: Starting a Successful Project`,
+                link: `#`
+            },
+        ]
+    },
+    {
+        title: `Professional Certificate in Back-End Developer`,
+        platform: "Coursera",
+        cardImage: "assets/img/education/coursera.svg",
+        instructor: "Meta ",
+        time: "2023 - Current",
+        courses: [
+            {
+                title: `Introduction to Back-End Development`,
+                link: `https://www.coursera.org/account/accomplishments/verify/4NXTQH73HGDJ`
+            },
+            {
+                title: `Programming in Python`,
+                link: `https://www.coursera.org/account/accomplishments/verify/TFN7GK64HHUZ`
+            },
+            {
+                title: `Version Control`,
+                link: `https://www.coursera.org/account/accomplishments/verify/2RL7LZBNLB7H`
+            },
+            {
+                title: `Introduction to Databases for Back-End Development`,
+                link: `https://www.coursera.org/account/accomplishments/verify/F83EQUF7CUYK`
+            },
+            {
+                title: `Django Web Framework`,
+                link: `https://www.coursera.org/account/accomplishments/verify/QVSHK2G6MZ66`
+            },
+            {
+                title: `APIs`,
+                link: `#`
+            },
+        ]
+    },
+    {
+        title: `Specialization in Project Management Principles and Practices`,
+        platform: "Coursera",
+        cardImage: "assets/img/education/coursera.svg",
+        instructor: "University of California, Irvine",
+        time: "2022 - 2022",
+        courses: [
+            {
+                title: `Initiating and Planning Projects`,
+                link: `https://www.coursera.org/account/accomplishments/verify/6YQGFE8U3AMW`
+            },
+            {
+                title: `Budgeting and Scheduling Projects`,
+                link: `https://www.coursera.org/account/accomplishments/verify/3L9P8D9R9JUW`
+            },
+            {
+                title: `Managing Project Risks and Changes`,
+                link: `https://www.coursera.org/account/accomplishments/verify/SZWNWBBZNU9J`
+            },
+        ]
+    },
+    {
+        title: `Specialization in Deep Learning`,
+        platform: "Coursera",
+        cardImage: "assets/img/education/coursera.svg",
+        instructor: "DeepLearning.AI",
+        time: "2020 - 2021",
+        courses: [
+            {
+                title: `Neural Networks and Deep Learning`,
+                link: `https://www.coursera.org/account/accomplishments/certificate/PRNK9S36YTRA`
+            },
+            {
+                title: `Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization`,
+                link: `https://www.coursera.org/account/accomplishments/certificate/LKKGSFVC28W4`
+            },
+            {
+                title: `Structuring Machine Learning Projects`,
+                link: `https://www.coursera.org/account/accomplishments/certificate/R7BB5VQC54JL`
+            },
+        ]
+    },
+    {
+        title: `Specialization in Data Science`,
+        platform: "EdX",
+        cardImage: "assets/img/education/edx-1.svg",
+        instructor: "Harvard University",
+        time: "2018 - 2019",
+        courses: [
+            {
+                title: `R Basics`,
+                link: `https://courses.edx.org/certificates/5683d6e296224883a12702078d7070a9`
+            },
+            {
+                title: `Visualization`,
+                link: `https://courses.edx.org/certificates/5eb6a36558d6410f8e936388019ece8`
+            },
+            {
+                title: `Probability`,
+                link: `https://courses.edx.org/certificates/eb9991dfe81e47a2aa7d8bdef2f95477`
+            },
+            {
+                title: `Inference and Modeling`,
+                link: `https://courses.edx.org/certificates/7ccdd2c76e1d44e2b55fb7391367249b`
+            },
+            {
+                title: `Productivity Tools`,
+                link: `https://courses.edx.org/certificates/75d2137639184ceeb862424a5ec8d264`
+            },
+            {
+                title: `Data Wrangling`,
+                link: `ttps://courses.edx.org/certificates/0b27c1ec1fd343988532bb44dee28e89`
+            },
+            {
+                title: `Linear Regression`,
+                link: `https://courses.edx.org/certificates/637a7c1596cc45c58d588eea3027f99d`
+            },
+            {
+                title: `Machine Learning`,
+                link: `https://courses.edx.org/certificates/0ea156f762a74462930d03d7a8379596`
+            },
+        ]
     }
-    $(".timeline-content").removeClass("timeline-item-bg");
+];
 
-    sr.reveal(".js--fadeInRight", {
-      origin: "right",
-      distance: "300px",
-      easing: "ease-in-out",
-      duration: 800,
-    });
-  } else {
-    sr.reveal(".js--fadeInLeft", {
-      origin: "left",
-      distance: "300px",
-      easing: "ease-in-out",
-      duration: 800,
+const show_mooc_education = () => {
+    let output = "";
+    mooc_education.forEach(({ title, platform, cardImage, instructor, time, courses }) => {
+
+        const titleArray = title.split(" in ");
+        const titleColor = titleArray.slice(0, 1).map((item) => `<span class="color-primary">${item}</span>`).join("");
+        const titleText = titleArray.slice(1, titleArray.length).map((item) => `${item}`).join(" ");
+
+        const fullTitle = titleColor + " " + titleText;
+
+        courses_div = "";
+
+        courses.forEach(({ title, link }) => {
+            courses_div += `
+                        <div class="item">
+                            <i class="fa-solid fa-chevron-right icon color-primary"></i>
+                            <a href="${link}" target="_blank">${title}</a>
+                        </div>`;
+        });
+
+        output += `
+            <div class="resume-item">
+                <h4>${fullTitle}</h4>
+                <h5 class="item-date">
+                    <i class="fas fa-calendar-alt icon" style="margin-right:10px"></i>
+                    ${time}
+                </h5>
+                <div class="items-container">
+                    <div class="company-name">
+                        <img
+                            src="${cardImage}"
+                            alt=""
+                            width="24px"
+                            height="24px"
+                            style="background-color: white; padding: 2px; border-radius: 25%;"
+                        >
+                        ${instructor} at ${platform}
+                    </div>
+
+                </div>
+                ${courses_div}
+            </div>`;
+
     });
 
-    sr.reveal(".js--fadeInRight", {
-      origin: "right",
-      distance: "300px",
-      easing: "ease-in-out",
-      duration: 800,
-    });
-  }
-
-});
+    education_mooc_cards.innerHTML = output;
+};
+document.addEventListener("DOMContentLoaded", show_mooc_education);
