@@ -55,8 +55,7 @@ const social = [
     }
 ];
 
-const social_networks = document.querySelector(".social-networks");
-const social_networks_main = document.querySelector(".social-networks-main");
+const social_networks = document.querySelectorAll(".social-networks");
 
 // function for rendering project cards data
 const show_social_networks = () => {
@@ -67,8 +66,9 @@ const show_social_networks = () => {
             ${icon}
         </a>`;
     });
-    social_networks.innerHTML = output;
-    social_networks_main.innerHTML = output;
+    social_networks.forEach((element) => {
+        element.innerHTML = output;
+    });
 };
 
 document.addEventListener("DOMContentLoaded", show_social_networks);

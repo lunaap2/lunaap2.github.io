@@ -5,10 +5,14 @@ a.socialicon {
 
 /* HEADER */
 
-#header .social-networks-main {
+#header .social-networks {
     margin-top: 40px;
     display: flex;
     justify-content: left;
+}
+
+#contact .social-networks {
+    margin-top: 20px;
 }
 
 #header.header-top .social-icons,
@@ -40,6 +44,10 @@ a.socialicon {
     margin-right: 15px;
 }
 
+#contact .social-networks .socialicon {
+    width: var(--link-size-footer-b);
+    height: var(--link-size-footer-b);
+}
 
 .socialicon i {
     margin: auto;
@@ -47,7 +55,6 @@ a.socialicon {
     z-index: 1;
     transition: var(--trans-props);
 }
-
 
 .kaggle i {
     margin: auto;

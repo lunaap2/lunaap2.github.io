@@ -1047,7 +1047,7 @@ section .container {
 
 .contact .info-box i.bx {
   font-size: 24px;
-  color: var(--color-tertiary);
+  color: #fff;
   border-radius: 50%;
   padding: 14px;
   float: left;
