@@ -22,7 +22,7 @@ a.socialicon {
 
 .social-icons {
     display: flex;
-    font-size: 35px;
+    font-size: 45px;
     align-items: center;
     justify-content: center;
     flex-flow: row wrap;
