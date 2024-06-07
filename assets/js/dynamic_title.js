@@ -8,7 +8,7 @@ window.onload = function () {
             toggle();
         } else {
             document.title = pageTitle;
-            favicon.href = "./assets/images/dp_male.svg"
+            favicon.href = "./assets/img/dp_male.svg"
         }
     });
 
@@ -16,10 +16,10 @@ window.onload = function () {
     function toggle() {
         if (document.title === attentionMessage) {
             document.title = pageTitle;
-            favicon.href = "./assets/images/dp_male.svg";
+            favicon.href = "./assets/img/dp_male.svg";
         } else {
             document.title = attentionMessage;
-            favicon.href = "./assets/images/folded.png";
+            favicon.href = "./assets/img/folded.png";
         }
     }
 };
