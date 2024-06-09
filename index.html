@@ -113,6 +113,7 @@
           <li><a class="nav-link" href="#about">About</a></li>
           <li><a class="nav-link" href="#resume">Resume</a></li>
           <li><a class="nav-link" href="#services">Services</a></li>
+          <li><a class="nav-link" href="#cheatsheets">CheatSheets</a></li>
           <!-- <li><a class="nav-link" href="#portfolio">Portfolio</a></li> -->
           <li><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
@@ -374,6 +375,28 @@
   </section><!-- End Services Section -->
 
   <!--
+   _____ _                _    _____ _               _
+  / ____| |              | |  / ____| |             | |
+ | |    | |__   ___  __ _| |_| (___ | |__   ___  ___| |_ ___
+ | |    | '_ \ / _ \/ _` | __|\___ \| '_ \ / _ \/ _ \ __/ __|
+ | |____| | | |  __/ (_| | |_ ____) | | | |  __/  __/ |_\__ \
+  \_____|_| |_|\___|\__,_|\__|_____/|_| |_|\___|\___|\__|___/
+  -->
+  <section id="cheatsheets" class="cheatsheets">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>CheatSheets</h2>
+        <p><span class="color-primary">Cheat</span>Sheets</p>
+      </div>
+
+      <div class="row cheatsheets-cards">
+      </div>
+
+    </div>
+  </section>
+
+  <!--
   _____           _    __      _ _          _____           _   _
  |  __ \         | |  / _|    | (_)        / ____|         | | (_)
  | |__) ___  _ __| |_| |_ ___ | |_  ___   | (___   ___  ___| |_ _  ___  _ __
@@ -598,58 +621,56 @@
           </div>
         </div>
       </div>
-      <!--
-      <form
-        name="form1"
-        action="https://formsubmit.co/sebastian.martinez.serna@gmail.com"
-        method="POST"
-        target="_blank"
-        accept-charset="UTF-8"
-        class="php-email-form mt-4"
-      >
-        <input type="hidden" name="_next" value="https://JuanS3.github.io/">
-        <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_subject" value="New message from JuanS3.github.io">
 
-        <div class="row">
-          <div class="col-md-6 form-group">
-            <input id="name" type="text" name="name" placeholder="Your Name" class="form-control" required />
-          </div>
-          <div class="col-md-6 form-group">
-            <input id="email" type="email" name="email" placeholder="Email Address" class="form-control" required />
-          </div>
-        </div>
-
-        <div class="row mt-3">
-          <div class="col-md-6 form-group">
-            <input id="subject" type="text" name="subject" placeholder="Subject" class="form-control" required>
-          </div>
-          <div class="col-md-6 form-group">
-            <input id="webpage" type="text" name="webpage" placeholder="Website" class="form-control" />
-          </div>
-        </div>
-
-        <div class="form-group mt-3">
-          <textarea
-            id="textArea"
-            rows="5"
-            name="message"
-            placeholder="Type your Message"
-            class="form-control"
-            required
-          >
-          </textarea>
-        </div>
-
-        <div id="btn_send" class="row mt-4">
-          <button id="lnch" type="button" value="Send">
-            Send Message
-          </button>
-          <div id="lnch_btn"><i class="fas fa-space-shuttle"></i></div>
-
-        </div>
-
-      </form> -->
+      <!-- <form -->
+      <!--   name="form" -->
+      <!--   action="https://formsubmit.co/sebastian.martinez.serna@gmail.com" -->
+      <!--   method="POST" -->
+      <!--   target="_blank" -->
+      <!--   class="mt-4" -->
+      <!-- > -->
+      <!--   <input type="hidden" name="_next" value="https://JuanS3.github.io/"> -->
+      <!--   <input type="hidden" name="_template" value="table"> -->
+      <!--   <input type="hidden" name="_subject" value="New message from JuanS3.github.io"> -->
+      <!--  -->
+      <!--   <div class="row"> -->
+      <!--     <div class="col-md-6 form-group"> -->
+      <!--       <input id="name" type="text" name="name" placeholder="Your Name" class="form-control" required /> -->
+      <!--     </div> -->
+      <!--     <div class="col-md-6 form-group"> -->
+      <!--       <input id="email" type="email" name="email" placeholder="Email Address" class="form-control" required /> -->
+      <!--     </div> -->
+      <!--   </div> -->
+      <!--  -->
+      <!--   <div class="row mt-3"> -->
+      <!--     <div class="col-md-6 form-group"> -->
+      <!--       <input id="subject" type="text" name="subject" placeholder="Subject" class="form-control" required> -->
+      <!--     </div> -->
+      <!--     <div class="col-md-6 form-group"> -->
+      <!--       <input id="webpage" type="text" name="webpage" placeholder="Website" class="form-control" /> -->
+      <!--     </div> -->
+      <!--   </div> -->
+      <!--  -->
+      <!--   <div class="form-group mt-3"> -->
+      <!--     <textarea -->
+      <!--       id="textArea" -->
+      <!--       rows="5" -->
+      <!--       name="message" -->
+      <!--       placeholder="Type your Message" -->
+      <!--       class="form-control" -->
+      <!--       required -->
+      <!--     ></textarea> -->
+      <!--   </div> -->
+      <!--  -->
+      <!--   <div id="btn_send" class="row mt-4"> -->
+      <!--     <button id="lnch" type="submit" value="Send"> -->
+      <!--       Send Message -->
+      <!--     </button> -->
+      <!--     <div id="lnch_btn"><i class="fas fa-space-shuttle"></i></div> -->
+      <!--  -->
+      <!--   </div> -->
+      <!--  -->
+      <!-- </form> -->
 
     </div>
   </section><!-- End Contact Section -->
@@ -682,6 +703,7 @@
   <script src="assets/js/experience.js"></script>
   <script src="assets/js/education.js"></script>
   <script src="assets/js/services.js"></script>
+  <script src="assets/js/cheatsheets.js"></script>
   <script src="assets/js/dynamic_title.js"></script>
   <script src="https://use.fontawesome.com/releases/v6.2.1/js/all.js" crossorigin="anonymous"></script>
   <script src='https://kit.fontawesome.com/a076d05399.js'></script>
