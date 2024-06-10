@@ -52,7 +52,13 @@ const social = [
         icon: `<i class="fab fa-hackerrank"></i>`,
         link: `https://www.hackerrank.com/profile/The_OneCode`,
         css_: `hackerrank`
-    }
+    },
+    {
+        name: `Medium`,
+        icon: `<i class="fa-brands fa-medium"></i>`,
+        link: `https://medium.com/@juans3`,
+        css_: `medium`
+    },
 ];
 
 const social_networks = document.querySelectorAll(".social-networks");
