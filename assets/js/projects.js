@@ -1,10 +1,10 @@
 
-const cheatsheets_cards = document.querySelector(".cheatsheets-cards");
-const cheatsheets = [
+const projects_cards = document.querySelector(".projects-cards");
+const projects = [
     {
         title: "Power BI - Power Query M\nAdvance Functions",
         subtitle: "Master Data Transformation",
-        description: "Elevate your Power Query M skills with advanced functions for precise data manipulation and analysis.",
+        description: "This repository contains a collection of custom functions for Power Query M, designed to streamline and optimize data transformation.",
         svg: "power-bi",
         name: "Power BI - Power Query M",
         url: "https://github.com/JuanS3/PowerQueryM",
@@ -40,27 +40,26 @@ const cheatsheets = [
     // },
 ];
 
-const show_cheatsheets = () => {
+const show_projects = () => {
     let output = "";
-    cheatsheets.forEach(({ title, subtitle, description, svg, name, url, align_bst }) => {
+    projects.forEach(({ title, subtitle, description, svg, name, url, align_bst }) => {
 
         output += `
             <div class="col-lg-4 col-md-6 d-flex align-items-stretch ${align_bst}">
                 <div class="icon-box">
-                  <img
-                      src="assets/img/svg/${svg}.svg"
-                      alt="${name}"
-                      width="50"
-                      height="50"
-                  >
-                    <h4><a href="${url}">${title}</a></h4>
-                    <h5><a href="${url}">${subtitle}</a></h5>
-                    <p>${description}</p>
+                    <img
+                        src="assets/img/svg/${svg}.svg"
+                        alt="${name}"
+                        width="50"
+                        height="50"
+                    >
+                      <h4><a href="${url}" target="_blank">${title}</a></h4>
+                      <h5><a href="${url}" target="_blank">${subtitle}</a></h5>
+                      <p>${description}</p>
                 </div>
-            </div>`;
-
+            </div> `;
     });
 
-    cheatsheets_cards.innerHTML = output;
+    projects_cards.innerHTML = output;
 };
-document.addEventListener("DOMContentLoaded", show_cheatsheets);
+document.addEventListener("DOMContentLoaded", show_projects);
