@@ -4,7 +4,7 @@ const projects = [
     {
         title: "Power BI - Power Query M\nAdvance Functions",
         subtitle: "Master Data Transformation",
-        description: "This repository contains a collection of custom functions for Power Query M, designed to streamline and optimize data transformation.",
+        description: "A repository that contains a collection of custom functions for Power Query M, designed to streamline and optimize data transformation.",
         svg: "power-bi",
         name: "Power BI - Power Query M",
         url: "https://github.com/JuanS3/PowerQueryM",
