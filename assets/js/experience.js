@@ -1,6 +1,22 @@
 const experiencecards = document.querySelector(".experience-cards");
 const exp = [
     {
+        title: `Developer Engineer`,
+        company: "BODHITRI",
+        cardImage: "assets/img/experience/bodhitri.jpg",
+        place: "Bogotá, Colombia",
+        time: "Jun. 2024 - Current",
+        desp:
+            `Writing effective and scalable codes,`
+            + `Improve functionality of existing systems,`
+            + `Provide technical solutions to user requirements,`
+            + `Designing and implementing robust applications,`
+            + `Maintain and upgrade existing systems,`
+            + `Aligned architecture with business requirements,`
+            + `Delivered data-driven solutions that met the needs of the organization,`
+            + `Mentored junior data engineers and analysts,`
+    },
+    {
         title: `Professor of Data Structures`,
         company: "INTER",
         cardImage: "assets/img/experience/inter.jpg",
@@ -79,7 +95,7 @@ const exp = [
         place: "Bogotá, Colombia",
         time: "Oct. 2021 - Apr. 2022",
         desp:
-             
+
             `Develop construct test and maintain data architectures,`
             + `Develop data set processes,`
             + `Identify ways to improve data,`
