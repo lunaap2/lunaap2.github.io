@@ -1,0 +1,122 @@
+---
+import Section from "./Section.astro";
+import type { EducationProps } from "@types";
+
+interface Props {
+  education: EducationProps[];
+}
+
+const { education } = Astro.props;
+---
+
+<Section text="Education" href="education">
+  {
+    education.map(
+      ({
+        institution,
+        instructor,
+        degree,
+        startDate,
+        endDate,
+        dissertation,
+        dissertationLink,
+        courses,
+        logo,
+        educationType,
+      }) => (
+        <div class="mb-10">
+          <span class="relative flex justify-center mb-5">
+            <div class="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-transparent bg-gradient-to-r from-transparent via-gray-500 to-transparent opacity-75" />
+          </span>
+          <div class="flex gap-5">
+            <div class="w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden bg-white flex items-center justify-center p-2">
+              <img
+                class={`${
+                  logo.endsWith(".svg")
+                    ? "w-20 h-20"
+                    : "w-full h-full object-contain"
+                }`}
+                src={logo}
+                alt={institution}
+              />
+            </div>
+            <div class="flex-1">
+              <h3 class="text-2xl font-serif font-semibold text-white mb-1.5">
+                {educationType === "Informal" && instructor ? (
+                  <>
+                    {instructor}{" "}
+                    <span class="text-white/70 text-xl italic">
+                      {" "}
+                      at {institution}
+                    </span>
+                  </>
+                ) : (
+                  institution
+                )}
+              </h3>
+              <div class="flex flex-col items-start pb-5">
+                <h4 class="text-2xl font-serif text-primary font-medium mb-0.5">
+                  {degree.split(" ").length > 1 ? (
+                    <>
+                      <span class="text-rose-500">{degree.split(" ")[0]}</span>{" "}
+                      {degree.split(" ").slice(1).join(" ")}
+                    </>
+                  ) : (
+                    <>
+                      <span class="text-rose-500">{degree.slice(0, 3)}</span>
+                      {degree.slice(3)}
+                    </>
+                  )}
+                </h4>
+                <span class="font-bold text-sm text-white/70 pb-[2px]">
+                  {startDate} — {endDate}
+                </span>
+              </div>
+            </div>
+          </div>
+
+          {educationType === "Formal" && dissertation && (
+            <div class="mb-4">
+              <span class="text-lg font-bold text-white mb-2">
+                Dissertation Title:{" "}
+              </span>
+              {dissertationLink ? (
+                <a
+                  href={dissertationLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-white/70 hover:text-orange-400 transition-colors"
+                >
+                  {dissertation}
+                </a>
+              ) : (
+                <p class="text-white/70">{dissertation}</p>
+              )}
+            </div>
+          )}
+
+          {educationType === "Informal" && courses && courses.length > 0 && (
+            <div>
+              <h5 class="text-lg font-medium text-white mb-2">Courses</h5>
+              <ul class="list-none grid grid-cols-1 md:grid-cols-2 gap-2">
+                {courses.map((course) => (
+                  <li>
+                    <a
+                      href={course.certificate}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="text-white/70 hover:text-orange-400 transition-colors flex items-center"
+                    >
+                      <span class="mr-2">🔹</span>
+                      {course.name}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </div>
+      ),
+    )
+  }
+</Section>
