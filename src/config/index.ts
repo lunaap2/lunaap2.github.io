@@ -2,7 +2,7 @@ import type { SiteConfig, SiteContent } from "../types";
 
 const name = "Sebastián Martínez";
 const specialty = "Data Nerd & Python Engineer";
-const email = "sebastian.martinez@gmail.com";
+const email = "sebastian.martinez.serna@gmail.com";
 const summary =
   "I am a passionate data with 9 years of experience in the field. I have a strong background in machine learning, artificial intelligence, and data analysis. I am skilled in using Python, SQL, NoSQL, and other data science tools to extract insights from data and build models that solve real-world problems. I am a team player and I am always eager to learn new things.";
 
