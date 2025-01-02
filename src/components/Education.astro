@@ -16,6 +16,7 @@ const { education } = Astro.props;
         institution,
         instructor,
         degree,
+        certificate,
         startDate,
         endDate,
         dissertation,
@@ -49,6 +50,19 @@ const { education } = Astro.props;
                       {" "}
                       at {institution}
                     </span>
+                    {certificate ? (
+                      <>
+                        <span class="text-orange/70 text-xl italic">
+                          <a
+                            href={certificate}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="hover:text-primary inline-block after:relative after:bottom-[-4px] after:content-[url(/external.svg)]"
+                          >
+                          </a>
+                        </span>
+                      </>
+                    ) : null}
                   </>
                 ) : (
                   institution
@@ -116,7 +130,7 @@ const { education } = Astro.props;
             </div>
           )}
         </div>
-      ),
+      )
     )
   }
 </Section>

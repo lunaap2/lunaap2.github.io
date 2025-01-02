@@ -218,6 +218,7 @@ export const SITE_CONTENT: SiteContent = {
     {
       educationType: "Formal",
       degree: `M.Sc in Artificial Intelligence`,
+      certificate: null,
       institution: "Universidad Internacional de la Rioja (UNIR)",
       instructor: null,
       startDate: "2021",
@@ -230,6 +231,7 @@ export const SITE_CONTENT: SiteContent = {
     {
       educationType: "Formal",
       degree: `B.Sc in Computer Science`,
+      certificate: null,
       institution: "Escuela Colombiana de Ingeniería Julio Garavito (ECI)",
       instructor: null,
       startDate: "2011",
@@ -242,6 +244,7 @@ export const SITE_CONTENT: SiteContent = {
     {
       educationType: "Formal",
       degree: `B.Sc in Computer Science`,
+      certificate: null,
       institution: "Servicio Nacional de Aprendizaje (SENA)",
       instructor: null,
       startDate: "2009",
@@ -255,6 +258,7 @@ export const SITE_CONTENT: SiteContent = {
     {
       educationType: "Informal",
       degree: `Professional Certificate in Google Project Management`,
+      certificate: null,
       institution: "Coursera",
       instructor: "Google",
       startDate: "2024",
@@ -276,6 +280,7 @@ export const SITE_CONTENT: SiteContent = {
     {
       educationType: "Informal",
       degree: `Professional Certificate in Back-End Developer`,
+      certificate: null,
       institution: "Coursera",
       instructor: "Meta",
       startDate: "2023",
@@ -313,10 +318,11 @@ export const SITE_CONTENT: SiteContent = {
     {
       educationType: "Informal",
       degree: `Specialization in Project Management Principles and Practices`,
+      certificate: `https://www.coursera.org/account/accomplishments/specialization/certificate/6FSCW9G0M5EI`,
       institution: "Coursera",
       instructor: "University of California, Irvine",
       startDate: "2022",
-      endDate: "2022",
+      endDate: "2025",
       dissertation: null,
       dissertationLink: null,
       logo: `/education/uci.webp`,
@@ -333,11 +339,16 @@ export const SITE_CONTENT: SiteContent = {
           name: `Managing Project Risks and Changes`,
           certificate: `https://www.coursera.org/account/accomplishments/verify/SZWNWBBZNU9J`
         },
+        {
+          name: `Project Management Project`,
+          certificate: `https://www.coursera.org/account/accomplishments/verify/8BCAET44S58K`
+        }
       ]
     },
     {
       educationType: "Informal",
       degree: `Specialization in Deep Learning`,
+      certificate: null,
       institution: "Coursera",
       instructor: "DeepLearning.AI",
       startDate: "2020",
@@ -363,6 +374,7 @@ export const SITE_CONTENT: SiteContent = {
     {
       educationType: "Informal",
       degree: `Specialization in Data Science`,
+      certificate: null,
       institution: "EdX",
       instructor: "Harvard University",
       startDate: "2018",

@@ -40,6 +40,7 @@ export interface EducationProps {
   institution: string;
   instructor: string | null; // null for Formal
   degree: string;
+  certificate: string | null; // null for Formal
   dissertation: string | null;
   dissertationLink: string | null;
   startDate: string;
