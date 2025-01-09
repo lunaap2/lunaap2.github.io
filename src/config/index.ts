@@ -3,8 +3,9 @@ import type { SiteConfig, SiteContent } from "../types";
 const name = "Sebastián Martínez";
 const specialty = "Data Nerd & Python Engineer";
 const email = "sebastian.martinez.serna@gmail.com";
+const experienceYears = new Date().getFullYear() - 2016;
 const summary =
-  "I am a passionate data with 9 years of experience in the field. I have a strong background in machine learning, artificial intelligence, and data analysis. I am skilled in using Python, SQL, NoSQL, and other data science tools to extract insights from data and build models that solve real-world problems. I am a team player and I am always eager to learn new things.";
+  `I am a passionate data with ${experienceYears} years of experience in the field. I have a strong background in machine learning, artificial intelligence, and data analysis. I am skilled in using Python, SQL, NoSQL, and other data science tools to extract insights from data and build models that solve real-world problems. I am a team player and I am always eager to learn new things.`;
 
 export const SITE_CONFIG: SiteConfig = {
   title: `${name} — ${specialty}`,
@@ -279,6 +280,32 @@ export const SITE_CONTENT: SiteContent = {
     },
     {
       educationType: "Informal",
+      degree: `Professional Certificate in Google Advance Data Analytics`,
+      certificate: null,
+      institution: "Coursera",
+      instructor: "Google",
+      startDate: "2024",
+      endDate: "Current",
+      dissertation: "",
+      dissertationLink: null,
+      logo: `/education/google.webp`,
+      courses: [
+        {
+          name: `Foundations of Data Science`,
+          certificate: `https://www.coursera.org/account/accomplishments/certificate/1S89SOVRC75M`
+        },
+        {
+          name: `Get Started with Python`,
+          certificate: `https://www.coursera.org/account/accomplishments/certificate/JO6RE232IV81`
+        },
+        {
+          name: `Go Beyound the numbers: Translate Data into Insights`,
+          certificate: `#`
+        },
+      ]
+    },
+    {
+      educationType: "Informal",
       degree: `Professional Certificate in Back-End Developer`,
       certificate: null,
       institution: "Coursera",
@@ -478,7 +505,7 @@ export const SITE_CONTENT: SiteContent = {
   about: {
     description: `
       I'm Sebastián Martínez, a data and artificial intelligence systems engineer with a passion for using technology to solve real-world problems.
-      I have over 9 years of experience in the industry, and I've worked on a variety of projects, from developing data pipelines to building machine learning models.
+      I have over ${experienceYears} years of experience in the industry, and I've worked on a variety of projects, from developing data pipelines to building machine learning models.
       I'm always looking for new challenges, and I'm excited to use my skills to make a difference in the world.
       If you're looking for a data and AI engineer who is passionate about their work, then I'm your guy.
       Get in touch with me today to learn more about my work and how I can help you achieve your goals.
