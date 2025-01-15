@@ -5,7 +5,7 @@ const specialty = "Data Nerd & Python Engineer";
 const email = "sebastian.martinez.serna@gmail.com";
 const experienceYears = new Date().getFullYear() - 2016;
 const summary =
-  `I am a passionate data with ${experienceYears} years of experience in the field. I have a strong background in machine learning, artificial intelligence, and data analysis. I am skilled in using Python, SQL, NoSQL, and other data science tools to extract insights from data and build models that solve real-world problems. I am a team player and I am always eager to learn new things.`;
+  `As a results-driven data expert with ${experienceYears} years of experience in data engineering, machine learning, AI, data architecture and analytics, I have the skills to contribute to your business.I am proficient in Python, SQL, NoSQL and a range of data science tools, and specialize in designing data architectures, transforming complex data into actionable insights, and building scalable solutions; My experience includes developing data pipelines, creating machine learning models and addressing real-world business challenges. I am a collaborative team player with a passion for continuous learning and am always seeking new opportunities to apply my skills and drive impactful results.`
 
 export const SITE_CONFIG: SiteConfig = {
   title: `${name} — ${specialty}`,
@@ -48,9 +48,9 @@ export const SITE_CONTENT: SiteContent = {
       "startDate": "Aug 2023",
       "endDate": "Current",
       "summary": [
-        "Develop and deliver comprehensive coursework on data structures, with a strong emphasis on practical applications and real-world problem-solving. Topics covered include arrays, stacks, queues, linked lists, trees, and graph traversal techniques. By aligning lessons with industry trends, students gain applicable skills to meet workforce demands.",
-        "Pioneered a project-based learning methodology that emphasizes hands-on experience. Notable projects include console-based games like Sokoban, chess and Sudoku, which challenge students to utilize data structures for algorithm design and optimization. These projects foster critical thinking and teamwork while connecting theoretical concepts with tangible outcomes.",
-        "Redesigned the curriculum to integrate NoSQL databases, specifically focusing on MongoDB. Students were guided through the migration of relational models to NoSQL schema designs, enabling them to understand performance optimizations and the advantages of flexible data models. Workshops and case studies ensured deep comprehension and readiness for professional challenges."
+        "Developed and delivered comprehensive coursework on data structures, emphasizing practical applications and real-world problem-solving. The curriculum covered core concepts including arrays, stacks, queues, linked lists, trees, and graph traversal techniques, ensuring students gained a robust foundation in fundamental data structures. By aligning lessons with current industry trends and best practices, I aimed to equip students with the skills necessary to meet evolving workforce demands.",
+        "Pioneered a project-based learning methodology to provide students with hands-on experience. Notable projects included the development of console-based games such as Sokoban, chess, and Sudoku. These projects challenged students to apply their knowledge of data structures to algorithm design, optimization, and game logic implementation. This approach fostered critical thinking, problem-solving skills, and teamwork while solidifying the connection between theoretical concepts and tangible outcomes.",
+        "Led a curriculum redesign initiative to integrate NoSQL databases, with a specific focus on MongoDB. I guided students through the process of migrating relational data models to NoSQL schema designs, explaining the rationale behind different schema choices and emphasizing performance optimizations and the advantages of flexible data models. Hands-on workshops, real-world case studies, and practical exercises ensured a deep comprehension of NoSQL principles and prepared students for professional challenges involving modern data management techniques."
       ],
       "stack": {
         "Development": ["Python", "Java", "Javascript", "Go", "SQL", "NoSQL", "Containers", "Git"],
@@ -84,9 +84,9 @@ export const SITE_CONTENT: SiteContent = {
       "startDate": "Aug 2023",
       "endDate": "Feb 2024",
       "summary": [
-        "Spearheaded the development and optimization of large-scale data pipelines to enable analytics. Introduced innovative processing techniques that reduced latency by 40%, empowering teams with faster access to actionable insights.",
-        "Collaborated with stakeholders across marketing, operations, and product development to define data-driven strategies. Delivered state-of-the-art dashboards and reports, enhancing decision-making processes and driving a 20% increase in campaign efficiency.",
-        "Oversaw the transformation of traditional workflows into modern, data-centric approaches. By implementing advanced data platforms and leveraging automation, operational efficiency improved by 25%, and accuracy in reporting was enhanced significantly."
+        "Spearheaded the development and optimization of large-scale data pipelines to support advanced analytics initiatives across the organization. By introducing innovative data processing techniques and streamlining existing workflows, I achieved a 40% reduction in data latency, empowering business intelligence and analytics teams with faster access to actionable insights and enabling more timely decision-making.",
+        "Collaborated closely with stakeholders across marketing, operations, and product development departments to define and implement data-driven strategies. I designed and delivered state-of-the-art dashboards and reports using tools like PowerBI and Looker, providing clear visualizations and insightful analyses of key performance indicators. These efforts demonstrably enhanced decision-making processes and contributed to a 20% increase in overall campaign efficiency.",
+        "Oversaw the transformation of traditional, manual workflows into modern, automated, and data-centric approaches. By implementing advanced data platforms on AWS (S3, EC2, Lambda, Redshift, RDS) and leveraging automation tools like Apache Airflow, I significantly improved operational efficiency by 25% and enhanced the accuracy and reliability of reporting processes, minimizing manual errors and freeing up valuable time for strategic initiatives."
       ],
       "stack": {
         "Development": ["Python", "Rust", "SQL", "NoSQL", "Containers", "GNU/Linux", "Git"],
@@ -105,15 +105,15 @@ export const SITE_CONTENT: SiteContent = {
       "startDate": "Dec 2022",
       "endDate": "Jul 2023",
       "summary": [
-        "Designed and deployed scalable data solutions tailored to support high-volume environments, automating ETL pipelines to streamline operations. Efforts led to a 50% reduction in manual processing time and enhanced data availability for analytics.",
-        "Optimized backend systems to handle complex queries and large datasets, resulting in a 35% improvement in performance. This enhancement significantly supported real-time reporting capabilities and critical business insights.",
-        "Built strong relationships with internal stakeholders, ensuring alignment between technical solutions and business objectives. Delivered training and support to non-technical teams, enabling better utilization of data resources and fostering a culture of data-driven decision-making."
+        "Designed and deployed highly scalable data solutions tailored to support high-volume data environments, with a primary focus on automating ETL (Extract, Transform, Load) pipelines to streamline data operations and improve data accessibility. These efforts resulted in a significant 50% reduction in manual processing time, freeing up data engineers for more complex tasks and enhancing data availability for critical business analytics and reporting.",
+        "Optimized backend data systems, including databases and data processing frameworks (Apache Spark, Apache Hadoop, Apache Hive), to efficiently handle complex queries and extremely large datasets. These optimizations resulted in a 35% improvement in overall system performance, significantly enhancing real-time reporting capabilities and facilitating the delivery of timely and accurate business insights to stakeholders.",
+        "Focused on building strong working relationships with internal stakeholders across various departments, actively engaging in communication to ensure that technical solutions effectively aligned with overarching business objectives. Delivered targeted training and ongoing support to non-technical teams on data tools and reporting methodologies, empowering them to better utilize available data resources and fostering a strong culture of data-driven decision-making throughout the organization."
       ],
       "stack": {
         "Development": ["Python", "NoSQL", "Containers", "GNU/Linux", "Git"],
         "Data Warehouses": ["NoSQL: BigQuery"],
         "DataViz Tools": ["Power BI", "Looker"],
-        "ETL Frameworks": ["Apache Spark", "Apache Airflow", "PySpark"],
+        "ETL Frameworks": ["Apache Spark", "Apache Airflow", "PySpark", "Apache Hive", "Apache Hadoop"],
         "Cloud Tools": [
           "GCP: BigQuery", "GCP: Cloud Storage", "GCP: Cloud Functions", "GCP: Composer", "GCP: Cloud Run", "GCP: Cloud SQL", "GCP: Dataproc"
         ],
@@ -126,9 +126,9 @@ export const SITE_CONTENT: SiteContent = {
       "startDate": "May 2022",
       "endDate": "Dec 2022",
       "summary": [
-        "Developed and maintained scalable, robust data pipelines capable of processing millions of data points daily. The system ensured seamless data flow, supporting real-time analytics and machine learning initiatives.",
-        "Reengineered database schemas and implemented indexing strategies, reducing query execution times by 25%. Improvements enabled faster access to critical business metrics, significantly enhancing decision-making efficiency.",
-        "Collaborated with data scientists and analysts to implement predictive models, integrating them into production workflows. This collaboration provided actionable insights that improved key business processes and customer satisfaction."
+        "Developed and maintained scalable and robust data pipelines using Python, Apache Airflow, and AWS services (S3, EC2, Lambda, Redshift, RDS), designed to process millions of data points on a daily basis. This system ensured seamless and reliable data flow, providing critical support for real-time analytics dashboards and machine learning initiatives that drove key business decisions.",
+        "Reengineered existing database schemas and implemented advanced indexing strategies within PostgreSQL databases to optimize query performance. These improvements resulted in a 25% reduction in average query execution times, enabling faster access to critical business metrics and significantly enhancing overall decision-making efficiency for business analysts and other data consumers.",
+        "Worked closely with data scientists and business analysts to implement and integrate predictive models into production workflows. This collaborative effort facilitated the translation of complex analytical insights into actionable business strategies, leading to improvements in key business processes and increased customer satisfaction."
       ],
       "stack": {
         "Development": ["Python", "Django", "NoSQL", "Containers", "GNU/Linux", "Git"],
@@ -146,9 +146,9 @@ export const SITE_CONTENT: SiteContent = {
       "startDate": "Oct 2021",
       "endDate": "Apr 2022",
       "summary": [
-        "Designed and implemented data processing frameworks to handle high-velocity, high-volume data streams. Solutions enabled real-time insights, directly impacting strategic initiatives and customer engagement.",
-        "Led the migration of legacy systems to cloud-based platforms, reducing infrastructure costs and enhancing scalability. Efforts minimized downtime during migration, maintaining uninterrupted service availability.",
-        "Worked closely with data scientists and IT teams to optimize workflows for model deployment. Streamlined processes improved the accuracy and speed of delivering AI-driven insights to production environments."
+        "Designed and implemented robust data processing frameworks using technologies like Apache Spark, Apache Hadoop, and GCP services (BigQuery, Cloud Storage, Cloud Functions) to effectively handle high-velocity and high-volume data streams. These solutions enabled the generation of real-time business insights, which directly impacted strategic initiatives and improved customer engagement strategies.",
+        "Led the migration of several legacy on-premise data systems to modern cloud-based platforms on AWS and GCP. This strategic migration reduced infrastructure costs significantly, improved system scalability and reliability, and minimized downtime during the transition, ensuring uninterrupted service availability for business operations.",
+        "Collaborated closely with data scientists and IT operations teams to optimize workflows for efficient model deployment and integration into production environments. These streamlined processes significantly improved both the accuracy and speed of delivering AI-driven insights to production systems, enabling faster and more effective implementation of data-driven solutions."
       ],
       "stack": {
         "Development": ["Python", "Scala", "NoSQL", "Containers", "GNU/Linux", "Git"],
@@ -169,9 +169,9 @@ export const SITE_CONTENT: SiteContent = {
       "startDate": "Mar 2021",
       "endDate": "Jul 2021",
       "summary": [
-        "Led the development of a deep learning model for emotion recognition using voice data. Achieved an 65% accuracy rate by implementing advanced optimization techniques and rigorous cross-validation, exceeding project expectations.",
-        "Integrated machine learning models into real-time systems for enhanced user experiences, leveraging AI capabilities to deliver innovative product features. The implementation improved user satisfaction metrics by 15%.",
-        "Ensured strict adherence to data ethics and privacy standards while managing large-scale datasets. Delivered robust AI models that balanced performance with compliance to regulatory requirements."
+        "Led the development and implementation of a deep learning model for emotion recognition using voice data. By employing advanced optimization techniques, including hyperparameter tuning and model architecture exploration, and conducting rigorous cross-validation, I achieved a 65\% accuracy rate, exceeding initial project expectations and demonstrating a strong understanding of deep learning principles and audio processing.",
+        "Integrated developed machine learning models into real-time systems to enhance user experiences and deliver innovative product features. By leveraging AI capabilities to personalize user interactions and provide context-aware recommendations, the implementation of these models demonstrably improved user satisfaction metrics by 15\%, demonstrating the value of AI in enhancing user engagement.",
+        "Prioritized and ensured strict adherence to data ethics and privacy standards throughout the lifecycle of data management and model development, particularly when working with large-scale datasets. This commitment to responsible AI practices ensured the delivery of robust and compliant AI models that balanced high performance with adherence to all relevant regulatory requirements and ethical considerations."
       ],
       "stack": {
         "Development": ["Python", "NoSQL", "Containers", "GNU/Linux", "Git"],
@@ -185,9 +185,9 @@ export const SITE_CONTENT: SiteContent = {
       "startDate": "Nov 2019",
       "endDate": "Oct 2021",
       "summary": [
-        "Designed and implemented Python-based applications, focusing on performance and scalability. Enhanced system efficiency by reducing processing times by 20% through effective code optimization.",
-        "Developed RESTful APIs to facilitate seamless integration with third-party systems. Improved interoperability and reduced deployment times, enabling faster delivery of business solutions.",
-        "Migrated legacy systems to modern architectures, minimizing disruptions and ensuring smooth transitions. Introduced robust security measures that fortified system reliability and compliance."
+        "Designed, developed, and implemented various Python-based applications, placing a strong emphasis on performance optimization and scalability to meet the demands of growing user bases and increasing data volumes. Through effective code optimization techniques, including algorithmic improvements and efficient data structures, I enhanced overall system efficiency by reducing processing times by 20\%.",
+        "Developed and maintained RESTful APIs using frameworks like Django and FastAPI to facilitate seamless integration with various third-party systems and services. This improved interoperability between different software components and significantly reduced deployment times for new features and business solutions, enabling faster delivery of value to clients.",
+        "Led the migration of legacy systems to modern cloud-based architectures, minimizing disruptions to ongoing operations and ensuring smooth transitions for users. During these migrations, I introduced robust security measures, including authentication, authorization, and data encryption, which significantly fortified system reliability and ensured compliance with industry security standards and best practices."
       ],
       "stack": {
         "DataViz Tools": ["Power BI", "QlikSense", "Looker", "Python Dash"],
@@ -202,9 +202,9 @@ export const SITE_CONTENT: SiteContent = {
       "startDate": "Apr 2017",
       "endDate": "Oct 2021",
       "summary": [
-        "Designed and deployed advanced dashboards and scalable data warehouses to support real-time analytics. Delivered insights that drove a 15% increase in operational efficiency across key departments.",
-        "Streamlined ETL workflows by integrating automation tools, reducing processing times by 35%. Enhanced data reliability and consistency for internal and external reporting needs.",
-        "Conducted extensive training sessions on BI tools and reporting methodologies for non-technical teams. Improved data literacy and enabled a broader organizational shift towards data-driven decision-making."
+        "Designed and deployed advanced business intelligence dashboards and scalable data warehouses to provide comprehensive support for real-time analytics and reporting. By delivering actionable insights derived from the data, I contributed to a 15\% increase in operational efficiency across key departments within the organization.",
+        "Streamlined existing ETL (Extract, Transform, Load) workflows by integrating various automation tools and techniques, including scripting and workflow orchestration platforms. These improvements resulted in a 35\% reduction in data processing times, significantly enhancing data reliability and consistency for both internal and external reporting requirements.",
+        "Conducted extensive training sessions and workshops on business intelligence tools, data analysis techniques, and reporting methodologies for non-technical teams across the organization. This initiative significantly improved overall data literacy within the company and enabled a broader organizational shift towards data-driven decision-making at all levels."
       ],
       "stack": {
         "DataViz Tools": ["Power BI", "QlikSense", "Looker", "Python Dash"],
@@ -292,11 +292,11 @@ export const SITE_CONTENT: SiteContent = {
       courses: [
         {
           name: `Foundations of Data Science`,
-          certificate: `https://www.coursera.org/account/accomplishments/certificate/1S89SOVRC75M`
+          certificate: `https://www.coursera.org/account/accomplishments/verify/1S89SOVRC75M`
         },
         {
           name: `Get Started with Python`,
-          certificate: `https://www.coursera.org/account/accomplishments/certificate/JO6RE232IV81`
+          certificate: `https://www.coursera.org/account/accomplishments/verify/JO6RE232IV81`
         },
         {
           name: `Go Beyound the numbers: Translate Data into Insights`,
@@ -345,7 +345,7 @@ export const SITE_CONTENT: SiteContent = {
     {
       educationType: "Informal",
       degree: `Specialization in Project Management Principles and Practices`,
-      certificate: `https://www.coursera.org/account/accomplishments/specialization/certificate/6FSCW9G0M5EI`,
+      certificate: `https://www.coursera.org/account/accomplishments/specialization/verify/6FSCW9G0M5EI`,
       institution: "Coursera",
       instructor: "University of California, Irvine",
       startDate: "2022",
@@ -386,15 +386,15 @@ export const SITE_CONTENT: SiteContent = {
       courses: [
         {
           name: `Neural Networks and Deep Learning`,
-          certificate: `https://www.coursera.org/account/accomplishments/certificate/PRNK9S36YTRA`
+          certificate: `https://www.coursera.org/account/accomplishments/verify/PRNK9S36YTRA`
         },
         {
           name: `Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization`,
-          certificate: `https://www.coursera.org/account/accomplishments/certificate/LKKGSFVC28W4`
+          certificate: `https://www.coursera.org/account/accomplishments/verify/LKKGSFVC28W4`
         },
         {
           name: `Structuring Machine Learning Projects`,
-          certificate: `https://www.coursera.org/account/accomplishments/certificate/R7BB5VQC54JL`
+          certificate: `https://www.coursera.org/account/accomplishments/verify/R7BB5VQC54JL`
         },
       ]
     },
@@ -504,7 +504,7 @@ export const SITE_CONTENT: SiteContent = {
   ],
   about: {
     description: `
-      I'm Sebastián Martínez, a data and artificial intelligence systems engineer with a passion for using technology to solve real-world problems.
+      I'm Sebastián Martínez, a computer science graduate with a passion for using technology to solve real-world problems.
       I have over ${experienceYears} years of experience in the industry, and I've worked on a variety of projects, from developing data pipelines to building machine learning models.
       I'm always looking for new challenges, and I'm excited to use my skills to make a difference in the world.
       If you're looking for a data and AI engineer who is passionate about their work, then I'm your guy.
