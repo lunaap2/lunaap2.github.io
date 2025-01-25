@@ -416,7 +416,7 @@ export const SITE_CONTENT: SiteContent = {
         },
         {
           name: `Visualization`,
-          certificate: `https://courses.edx.org/certificates/5eb6a36558d6410f8e936388019ece8`
+          certificate: `https://courses.edx.org/certificates/5eb6a36558d6410f8e936388019ece83`
         },
         {
           name: `Probability`,
