@@ -43,14 +43,36 @@ export const SITE_CONTENT: SiteContent = {
 
   experience: [
     {
+      "company": "Monokera",
+      "position": "Data Engineer",
+      "startDate": "Feb. 2025",
+      "endDate": "Current.",
+      "summary": [
+        "Spearheaded the resolution of complex data incidents and actively optimized critical data pipelines, encompassing root cause analysis, performance tuning, and resource allocation to ensure high data availability and robust system performance for real-time operational and analytical needs.",
+        "Designed, developed, and comprehensively refactored intricate ETL/ELT pipelines and advanced SQL queries using Python (PySpark), streamlining data ingestion from diverse sources and transforming large datasets to support critical business intelligence reporting and strategic decision-making.",
+        "Established and implemented comprehensive data validation frameworks, along with rigorous documentation standards, significantly enhancing data accuracy, reliability, and fostering seamless knowledge transfer, which minimized troubleshooting time and improved overall data governance across technical and business teams.",
+      ],
+      "stack": {
+        "Development": ["Python", "Ruby", "SQL", "NoSQL", "Containers", "Git", "GNU/Linux"],
+        "ETL Frameworks": ["Apache Spark", "Apache Airflow", "PySpark", "Pandas"],
+        "Data Bases": ["SQL: PostgreSQL", "NoSQL: Atena"],
+        "DataViz Tools": ["Quicksight"],
+        "Cloud Tools": [
+          "AWS: S3", "AWS: Athena", "AWS: Glue", "AWS: Lambda", "AWS: CloudWatch",
+        ],
+      },
+      "logo": "/experience/monokera.jpeg",
+    },
+    {
       "company": "INTER",
       "position": "Professor",
-      "startDate": "Aug 2023",
-      "endDate": "Current",
+      "startDate": "Aug. 2023",
+      "endDate": "Jun. 2025",
       "summary": [
-        "Developed and delivered comprehensive coursework on data structures, emphasizing practical applications and real-world problem-solving. The curriculum covered core concepts including arrays, stacks, queues, linked lists, trees, and graph traversal techniques, ensuring students gained a robust foundation in fundamental data structures. By aligning lessons with current industry trends and best practices, I aimed to equip students with the skills necessary to meet evolving workforce demands.",
-        "Pioneered a project-based learning methodology to provide students with hands-on experience. Notable projects included the development of console-based games such as Sokoban, chess, and Sudoku. These projects challenged students to apply their knowledge of data structures to algorithm design, optimization, and game logic implementation. This approach fostered critical thinking, problem-solving skills, and teamwork while solidifying the connection between theoretical concepts and tangible outcomes.",
-        "Led a curriculum redesign initiative to integrate NoSQL databases, with a specific focus on MongoDB. I guided students through the process of migrating relational data models to NoSQL schema designs, explaining the rationale behind different schema choices and emphasizing performance optimizations and the advantages of flexible data models. Hands-on workshops, real-world case studies, and practical exercises ensured a deep comprehension of NoSQL principles and prepared students for professional challenges involving modern data management techniques."
+
+        "Developed and delivered comprehensive coursework on data structures, data analysis, relational databases, non-relational databases, security and architecture in applications, software testing, and algorithms \& programming 1, emphasizing practical applications and real-world problem-solving.",
+        "Guided students through hands-on projects, including the development of console-based games (Chess, Sokoban) and an analytics API for social media, fostering critical thinking, algorithmic application, and practical development skills.",
+        "Led a curriculum redesign initiative to integrate the Data Analysis course and NoSQL databases (MongoDB), guiding students through relational data model migration to NoSQL schema designs and performance optimization.",
       ],
       "stack": {
         "Development": ["Python", "Java", "Javascript", "Go", "SQL", "NoSQL", "Containers", "Git"],
@@ -59,30 +81,10 @@ export const SITE_CONTENT: SiteContent = {
       "logo": "/experience/inter.jpg",
     },
     {
-      "company": "BODHITRI",
-      "position": "Developer Engineer",
-      "startDate": "Jun 2024",
-      "endDate": "Oct 2024",
-      "summary": [
-        "Led the end-to-end development of scalable and innovative software solutions, ensuring robust architecture and optimized performance. Collaborated closely with cross-functional teams to gather requirements, define goals, and deliver features that improved system efficiency by 30%.",
-        "Conducted extensive refactoring of legacy codebases to improve readability, maintainability, and scalability. Implemented modern design patterns and best practices, which reduced system bugs by 40% and improved deployment cycles by 25%.",
-        "Played a pivotal role in mentoring junior developers, introducing agile practices, and fostering a culture of continuous learning. Led code reviews, knowledge-sharing sessions, and workshops on the latest software Development and methodologies, enhancing team productivity."
-      ],
-      "stack": {
-        "Development": ["Python", "SQL", "NoSQL", "Containers", "Git"],
-        "Data Bases": ["SQL: PostgreSQL", "SQL: MySQL", "SQL: MS SQL Server", "NoSQL: MongoDB"],
-        "Cloud Tools": [
-          "AWS: S3", "AWS: Redshift", "AWS: EC2", "AWS: Lambda",
-          "GCP: BigQuery", "GCP: Cloud Storage", "GCP: Cloud Functions"
-        ],
-      },
-      "logo": "/experience/bodhitri.jpg",
-    },
-    {
       "company": "Dentsu",
       "position": "Data Lead",
-      "startDate": "Aug 2023",
-      "endDate": "Feb 2024",
+      "startDate": "Aug. 2023",
+      "endDate": "Feb. 2024",
       "summary": [
         "Spearheaded the development and optimization of large-scale data pipelines to support advanced analytics initiatives across the organization. By introducing innovative data processing techniques and streamlining existing workflows, I achieved a 40% reduction in data latency, empowering business intelligence and analytics teams with faster access to actionable insights and enabling more timely decision-making.",
         "Collaborated closely with stakeholders across marketing, operations, and product development departments to define and implement data-driven strategies. I designed and delivered state-of-the-art dashboards and reports using tools like PowerBI and Looker, providing clear visualizations and insightful analyses of key performance indicators. These efforts demonstrably enhanced decision-making processes and contributed to a 20% increase in overall campaign efficiency.",
@@ -102,8 +104,8 @@ export const SITE_CONTENT: SiteContent = {
     {
       "company": "HAVAS Media Group",
       "position": "Data Developer",
-      "startDate": "Dec 2022",
-      "endDate": "Jul 2023",
+      "startDate": "Dec. 2022",
+      "endDate": "Jul. 2023",
       "summary": [
         "Designed and deployed highly scalable data solutions tailored to support high-volume data environments, with a primary focus on automating ETL (Extract, Transform, Load) pipelines to streamline data operations and improve data accessibility. These efforts resulted in a significant 50% reduction in manual processing time, freeing up data engineers for more complex tasks and enhancing data availability for critical business analytics and reporting.",
         "Optimized backend data systems, including databases and data processing frameworks (Apache Spark, Apache Hadoop, Apache Hive), to efficiently handle complex queries and extremely large datasets. These optimizations resulted in a 35% improvement in overall system performance, significantly enhancing real-time reporting capabilities and facilitating the delivery of timely and accurate business insights to stakeholders.",
@@ -123,8 +125,8 @@ export const SITE_CONTENT: SiteContent = {
     {
       "company": "KLYM",
       "position": "Data Engineer",
-      "startDate": "May 2022",
-      "endDate": "Dec 2022",
+      "startDate": "May. 2022",
+      "endDate": "Dec. 2022",
       "summary": [
         "Developed and maintained scalable and robust data pipelines using Python, Apache Airflow, and AWS services (S3, EC2, Lambda, Redshift, RDS), designed to process millions of data points on a daily basis. This system ensured seamless and reliable data flow, providing critical support for real-time analytics dashboards and machine learning initiatives that drove key business decisions.",
         "Reengineered existing database schemas and implemented advanced indexing strategies within PostgreSQL databases to optimize query performance. These improvements resulted in a 25% reduction in average query execution times, enabling faster access to critical business metrics and significantly enhancing overall decision-making efficiency for business analysts and other data consumers.",
@@ -143,8 +145,8 @@ export const SITE_CONTENT: SiteContent = {
     {
       "company": "NTT Data",
       "position": "Data Engineer",
-      "startDate": "Oct 2021",
-      "endDate": "Apr 2022",
+      "startDate": "Oct. 2021",
+      "endDate": "Apr. 2022",
       "summary": [
         "Designed and implemented robust data processing frameworks using technologies like Apache Spark, Apache Hadoop, and GCP services (BigQuery, Cloud Storage, Cloud Functions) to effectively handle high-velocity and high-volume data streams. These solutions enabled the generation of real-time business insights, which directly impacted strategic initiatives and improved customer engagement strategies.",
         "Led the migration of several legacy on-premise data systems to modern cloud-based platforms on AWS and GCP. This strategic migration reduced infrastructure costs significantly, improved system scalability and reliability, and minimized downtime during the transition, ensuring uninterrupted service availability for business operations.",
@@ -166,8 +168,8 @@ export const SITE_CONTENT: SiteContent = {
     {
       "company": "Universidad Autonoma de Zacatecas",
       "position": "Business Practices in AI",
-      "startDate": "Mar 2021",
-      "endDate": "Jul 2021",
+      "startDate": "Mar. 2021",
+      "endDate": "Jul. 2021",
       "summary": [
         "Led the development and implementation of a deep learning model for emotion recognition using voice data. By employing advanced optimization techniques, including hyperparameter tuning and model architecture exploration, and conducting rigorous cross-validation, I achieved a 65\% accuracy rate, exceeding initial project expectations and demonstrating a strong understanding of deep learning principles and audio processing.",
         "Integrated developed machine learning models into real-time systems to enhance user experiences and deliver innovative product features. By leveraging AI capabilities to personalize user interactions and provide context-aware recommendations, the implementation of these models demonstrably improved user satisfaction metrics by 15\%, demonstrating the value of AI in enhancing user engagement.",
@@ -182,8 +184,8 @@ export const SITE_CONTENT: SiteContent = {
     {
       "company": "Rollup Consulting",
       "position": "Python Developer",
-      "startDate": "Nov 2019",
-      "endDate": "Oct 2021",
+      "startDate": "Nov. 2019",
+      "endDate": "Oct. 2021",
       "summary": [
         "Designed, developed, and implemented various Python-based applications, placing a strong emphasis on performance optimization and scalability to meet the demands of growing user bases and increasing data volumes. Through effective code optimization techniques, including algorithmic improvements and efficient data structures, I enhanced overall system efficiency by reducing processing times by 20\%.",
         "Developed and maintained RESTful APIs using frameworks like Django and FastAPI to facilitate seamless integration with various third-party systems and services. This improved interoperability between different software components and significantly reduced deployment times for new features and business solutions, enabling faster delivery of value to clients.",
@@ -199,8 +201,8 @@ export const SITE_CONTENT: SiteContent = {
     {
       "company": "Rollup Consulting",
       "position": "BI Consultant",
-      "startDate": "Apr 2017",
-      "endDate": "Oct 2021",
+      "startDate": "Apr. 2017",
+      "endDate": "Oct. 2021",
       "summary": [
         "Designed and deployed advanced business intelligence dashboards and scalable data warehouses to provide comprehensive support for real-time analytics and reporting. By delivering actionable insights derived from the data, I contributed to a 15\% increase in operational efficiency across key departments within the organization.",
         "Streamlined existing ETL (Extract, Transform, Load) workflows by integrating various automation tools and techniques, including scripting and workflow orchestration platforms. These improvements resulted in a 35\% reduction in data processing times, significantly enhancing data reliability and consistency for both internal and external reporting requirements.",
