@@ -15,9 +15,9 @@ const { description, image, name, email } = Astro.props;
     <!--   <span class="text-white">{description.split(".").slice(-2)}.</span> -->
     <!-- </p> -->
     <span class="text-neutral w-auto text-base md:pr-5">
-        {description.slice(0, -1).map((paragraph, index) => (
+        {description.slice(0, -1).map((paragraph) => (
         <>
-        <span key={index}>{paragraph}</span>
+        <span>{paragraph}</span>
           <br />
           <br />
         </>
@@ -40,6 +40,6 @@ const { description, image, name, email } = Astro.props;
   <br />
   <a
     class="text-sm py-5 px-8 text-white inline-block font-bold leading-5 bg-primary rounded-full"
-    ihref={`mailto:${email}`}>Get in Touch</a
+    href={`mailto:${email}`}>Get in Touch</a
   >
 </Section>

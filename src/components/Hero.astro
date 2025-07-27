@@ -28,11 +28,11 @@ const [specialty_fisrt, specialty_second] = specialty.split("&");
 
   <p class="text-neutral font-normal text-base md:text-lg mb-16">
     <span class="text-white">{summary[0]}</span>
-    {summary.slice(1).map((text, index) => (
+    {summary.slice(1).map((text) => (
       <>
         <br />
         <br />
-        <span key={index}>{text}</span>
+        <span>{text}</span>
       </>
     ))}
   </p>
