@@ -4,8 +4,13 @@ const name = "Sebastián Martínez";
 const specialty = "Data Nerd & Python Engineer";
 const email = "sebastian.martinez.serna@gmail.com";
 const experienceYears = new Date().getFullYear() - 2016;
-const summary =
-  `As a results-driven data expert with ${experienceYears} years of experience in data engineering, machine learning, AI, data architecture and analytics, I have the skills to contribute to your business.I am proficient in Python, SQL, NoSQL and a range of data science tools, and specialize in designing data architectures, transforming complex data into actionable insights, and building scalable solutions; My experience includes developing data pipelines, creating machine learning models and addressing real-world business challenges. I am a collaborative team player with a passion for continuous learning and am always seeking new opportunities to apply my skills and drive impactful results.`
+const summary =[
+  `👋 Hi! I’m Sebastián Martínez — a passionate data engineer and AI enthusiast with over ${experienceYears} years of experience helping companies unlock the full potential of their data.`,
+  `💡 Throughout my career, I’ve specialized in building end-to-end data solutions that create real business value. From designing scalable architectures and developing robust pipelines ⚙️, to training machine learning models 🤖 and delivering actionable insights 📊, I love working where engineering meets analytics.`,
+  `🧠 I’m highly skilled in Python, SQL, NoSQL, and a wide range of modern tools across the data ecosystem. Whether it's cleaning complex datasets 🧹, architecting cloud-based platforms ☁️, or collaborating with cross-functional teams 🤝 to solve real-world challenges, I always bring a hands-on, solution-driven mindset to the table.`,
+  `📚 Beyond the tech stack, I’m passionate about continuous learning, sharing knowledge, and building strong, collaborative teams. I believe data isn’t just about numbers—it’s about making smart, meaningful decisions that move businesses forward.`,
+  `🚀 If you're looking for someone who can turn complex data into real, measurable impact — you're in the right place.`,
+];
 
 export const SITE_CONFIG: SiteConfig = {
   title: `${name} — ${specialty}`,
@@ -14,11 +19,12 @@ export const SITE_CONFIG: SiteConfig = {
   lang: "en",
   siteLogo: "/me/me.small.webp",
   navLinks: [
-    { text: "Experience", href: "#experience" },
-    { text: "Education", href: "#education" },
-    { text: "Services", href: "#services" },
-    { text: "Projects", href: "#projects" },
-    { text: "About", href: "#about" },
+    { text: "Home", href: "/" },
+    { text: "Experience", href: "experience" },
+    { text: "Education", href: "education" },
+    { text: "Services", href: "services" },
+    { text: "Projects", href: "projects" },
+    { text: "About", href: "about" },
   ],
   socialLinks: [
     { text: "Twitter", href: "https://twitter.com/JuanS3Dev" },
@@ -29,8 +35,8 @@ export const SITE_CONFIG: SiteConfig = {
     { text: "Medium", href: "https://medium.com/@JuanS3" },
     { text: "Youtube", href: "https://youtube.com/@datolytix" },
   ],
-  socialImage: "/zen-og.png",
-  canonicalURL: "https://astro-zen.vercel.app",
+  socialImage: "/me/me.webp",
+  canonicalURL: "https://JuanS3.github.io",
 };
 
 export const SITE_CONTENT: SiteContent = {
@@ -505,13 +511,14 @@ export const SITE_CONTENT: SiteContent = {
     },
   ],
   about: {
-    description: `
-      I'm Sebastián Martínez, a computer science graduate with a passion for using technology to solve real-world problems.
-      I have over ${experienceYears} years of experience in the industry, and I've worked on a variety of projects, from developing data pipelines to building machine learning models.
-      I'm always looking for new challenges, and I'm excited to use my skills to make a difference in the world.
-      If you're looking for a data and AI engineer who is passionate about their work, then I'm your guy.
-      Get in touch with me today to learn more about my work and how I can help you achieve your goals.
-    `,
+    description: [
+      `🎓 I'm Sebastián Martínez — a computer science graduate with a deep passion for using technology to solve meaningful, real-world problems.`,
+      `💼 With over ${experienceYears} years of industry experience, I’ve worked across data engineering, machine learning, and cloud architecture — always focused on building scalable systems that create real business value.`,
+      `🚀 I’ve led projects involving data pipelines, predictive modeling, and data-driven decision platforms, and I enjoy translating technical complexity into clear, actionable outcomes.`,
+      `🧠 I’m constantly learning and staying curious — whether it’s exploring new tools, diving into AI advancements, or mentoring others in the data space.`,
+      `🤝 If you're looking for a thoughtful, reliable, and results-oriented data & AI engineer to help you turn ideas into impact — let’s connect.`,
+    ],
     image: "/me/me.webp",
+    email: email,
   },
 };

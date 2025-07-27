@@ -15,6 +15,7 @@ const [specialty_fisrt, specialty_second] = specialty.split("&");
     <span>{fisrtName}</span>
     <span class="text-rose-500">{lastName}</span>
   </h1>
+
   <p
     class="text-4xl sm:text-5xl leading-[46px] md:text-6xl font-serif text-blue-500 font-bold tracking-tighter mb-9"
   >
@@ -24,9 +25,16 @@ const [specialty_fisrt, specialty_second] = specialty.split("&");
     <span class="text-rose-500">{specialty_second.trim().split(" ")[0]}</span>
     {specialty_second.trim().split(" ").slice(1)}
   </p>
+
   <p class="text-neutral font-normal text-base md:text-lg mb-16">
-    <span class="text-white">{summary.split(".")[0]}.</span>
-    {summary.split(".").slice(1)}
+    <span class="text-white">{summary[0]}</span>
+    {summary.slice(1).map((text, index) => (
+      <>
+        <br />
+        <br />
+        <span key={index}>{text}</span>
+      </>
+    ))}
   </p>
 
   <a

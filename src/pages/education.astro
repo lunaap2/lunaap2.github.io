@@ -1,9 +1,9 @@
 ---
 import { SITE_CONTENT } from "@config";
-import Hero from "@components/Hero.astro";
 import Layout from "@layouts/Layout.astro";
+import Education from "@components/Education.astro";
 ---
 
 <Layout>
-  <Hero {...SITE_CONTENT.hero} />
+  <Education education={SITE_CONTENT.education} />
 </Layout>
