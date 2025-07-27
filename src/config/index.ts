@@ -20,11 +20,11 @@ export const SITE_CONFIG: SiteConfig = {
     siteLogo: "/me/me.small.webp",
     navLinks: [
         { text: "Home", href: "/" },
-        { text: "Experience", href: "experience" },
-        { text: "Education", href: "education" },
-        { text: "Services", href: "services" },
-        { text: "Projects", href: "projects" },
-        { text: "About", href: "about" },
+        { text: "Experience", href: "/experience" },
+        { text: "Education", href: "/education" },
+        { text: "Services", href: "/services" },
+        { text: "Projects", href: "/projects" },
+        { text: "About", href: "/about" },
     ],
     socialLinks: [
         { text: "Twitter", href: "https://twitter.com/JuanS3Dev" },
