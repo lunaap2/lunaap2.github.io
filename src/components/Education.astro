@@ -12,25 +12,31 @@ const { education } = Astro.props;
 <Section text="Education" href="education">
   {
     education.map(
-      ({
-        institution,
-        instructor,
-        degree,
-        certificate,
-        startDate,
-        endDate,
-        dissertation,
-        dissertationLink,
-        courses,
-        logo,
-        educationType,
-      }) => (
+      (
+        {
+          institution,
+          instructor,
+          degree,
+          certificate,
+          startDate,
+          endDate,
+          dissertation,
+          dissertationLink,
+          courses,
+          logo,
+          educationType,
+        },
+        pIndex,
+      ) => (
         <div class="mb-10">
           <span class="relative flex justify-center mb-5">
             <div class="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-transparent bg-gradient-to-r from-transparent via-gray-500 to-transparent opacity-75" />
           </span>
           <div class="flex gap-5">
-            <div class="w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden bg-white flex items-center justify-center p-2">
+            <div
+              transition:animate="slide"
+              class="w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden bg-white flex items-center justify-center p-2"
+            >
               <img
                 class={`${
                   logo.endsWith(".svg")
@@ -42,7 +48,10 @@ const { education } = Astro.props;
               />
             </div>
             <div class="flex-1">
-              <h3 class="text-2xl font-serif font-semibold text-white mb-1.5">
+              <h3
+                transition:animate="slide"
+                class="text-2xl font-serif font-semibold text-white mb-1.5"
+              >
                 {educationType === "Informal" && instructor ? (
                   <>
                     {instructor}{" "}
@@ -69,7 +78,10 @@ const { education } = Astro.props;
                 )}
               </h3>
               <div class="flex flex-col items-start pb-5">
-                <h4 class="text-2xl font-serif text-primary font-medium mb-0.5">
+                <h4
+                  transition:animate="slide"
+                  class="text-2xl font-serif text-primary font-medium mb-0.5"
+                >
                   {degree.split(" ").length > 1 ? (
                     <>
                       <span class="text-rose-500">{degree.split(" ")[0]}</span>{" "}
@@ -82,7 +94,10 @@ const { education } = Astro.props;
                     </>
                   )}
                 </h4>
-                <span class="font-bold text-sm text-white/70 pb-[2px]">
+                <span
+                  transition:animate="slide"
+                  class="font-bold text-sm text-white/70 pb-[2px]"
+                >
                   {startDate} — {endDate}
                 </span>
               </div>
@@ -91,9 +106,13 @@ const { education } = Astro.props;
 
           {educationType === "Formal" && dissertation && (
             <div class="mb-4">
-              <span class="text-lg font-bold text-white mb-2">
-                Dissertation Title:{" "}
-              </span>
+              <p class="text-lg font-bold text-white mb-2">
+                {"Dissertation Title: ".split(" ").map((word, wIndex) => (
+                  <span class="cascade-word" style={`--i: ${pIndex * 10 + wIndex};`}>
+                    {word}&nbsp;
+                  </span>
+                ))}
+              </p>
               {dissertationLink ? (
                 <a
                   href={dissertationLink}
@@ -101,19 +120,41 @@ const { education } = Astro.props;
                   rel="noopener noreferrer"
                   class="text-white/70 hover:text-orange-400 transition-colors"
                 >
-                  {dissertation}
+                  {dissertation.split(" ").map((word, wIndex) => (
+                    <span
+                      class="cascade-word"
+                      style={`--i: ${pIndex * 10 + 5 + wIndex};`}
+                    >
+                      {word}&nbsp;
+                    </span>
+                  ))}
                 </a>
               ) : (
-                <p class="text-white/70">{dissertation}</p>
+                <p class="text-white/70">
+                  {dissertation.split(" ").map((word, wIndex) => (
+                    <span
+                      class="cascade-word"
+                      style={`--i: ${pIndex * 10 + 5 + wIndex};`}
+                    >
+                      {word}&nbsp;
+                    </span>
+                  ))}
+                </p>
               )}
             </div>
           )}
 
           {educationType === "Informal" && courses && courses.length > 0 && (
             <div>
-              <h5 class="text-lg font-medium text-white mb-2">Courses</h5>
+              <h5 class="text-lg font-medium text-white mb-2">
+                {"Courses".split(" ").map((word, wIndex) => (
+                  <span class="cascade-word" style={`--i: ${pIndex * 10 + wIndex};`}>
+                    {word}&nbsp;
+                  </span>
+                ))}
+              </h5>
               <ul class="list-none grid grid-cols-1 md:grid-cols-2 gap-2">
-                {courses.map((course) => (
+                {courses.map((course, cIndex) => (
                   <li>
                     <a
                       href={course.certificate}
@@ -122,7 +163,14 @@ const { education } = Astro.props;
                       class="text-white/70 hover:text-orange-400 transition-colors flex items-center"
                     >
                       <span class="mr-2">🔹</span>
-                      {course.name}
+                      {course.name.split(" ").map((word, wIndex) => (
+                        <span
+                          class="cascade-word"
+                          style={`--i: ${pIndex * 10 + cIndex * 5 + wIndex};`}
+                        >
+                          {word}&nbsp;
+                        </span>
+                      ))}
                     </a>
                   </li>
                 ))}
@@ -130,7 +178,7 @@ const { education } = Astro.props;
             </div>
           )}
         </div>
-      )
+      ),
     )
   }
 </Section>

@@ -10,21 +10,19 @@ const { description, image, name, email } = Astro.props;
 
 <Section text="About Me" href="about">
   <div class="flex gap-12 md:gap-8 flex-col items-center md:flex-row">
-    <!-- <p class="text-neutral w-auto text-base md:pr-5"> -->
-    <!--   {description.split(".").slice(0, -2).join(".\n")} -->
-    <!--   <span class="text-white">{description.split(".").slice(-2)}.</span> -->
-    <!-- </p> -->
-    <span class="text-neutral w-auto text-base md:pr-5">
-        {description.slice(0, -1).map((paragraph) => (
-        <>
-        <span>{paragraph}</span>
-          <br />
-          <br />
-        </>
+    <p class="text-neutral w-auto text-base md:pr-5">
+      {description.map((paragraph, pIndex) => (
+        <span class="block mb-4">
+          {paragraph.split(" ").map((word, wIndex) => (
+            <span class="cascade-word" style={`--i: ${pIndex * 10 + wIndex};`}>
+              {word}&nbsp;
+            </span>
+          ))}
+        </span>
       ))}
-      <span class="text-white">{description.slice(-1)}.</span>
-    </span>
+    </p>
     <div
+      transition:animate="slide"
       class="w-64 h-80 bg-white p-4 flex-shrink-0 rotate-[5deg] md:rotate-[7deg]"
     >
       <Image
