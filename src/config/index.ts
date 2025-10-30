@@ -1,6 +1,6 @@
 import type { SiteConfig, SiteContent } from "../types";
 
-const name = "Sebastián Martínez";
+const name = "Retoña Diaz";
 const specialty = "Data Nerd & Python Engineer";
 const email = "sebastian.martinez.serna@gmail.com";
 const experienceYears = new Date().getFullYear() - 2016;
@@ -49,7 +49,7 @@ export const SITE_CONTENT: SiteContent = {
 
     experience: [
         {
-            "company": "Monokera",
+            "company": "Globant",
             "position": "Data Engineer",
             "startDate": "Feb. 2025",
             "endDate": "Current.",
@@ -68,23 +68,6 @@ export const SITE_CONTENT: SiteContent = {
                 ],
             },
             "logo": "/experience/monokera.jpeg",
-        },
-        {
-            "company": "INTER",
-            "position": "Professor",
-            "startDate": "Aug. 2023",
-            "endDate": "Jun. 2025",
-            "summary": [
-
-                "Developed and delivered comprehensive coursework on data structures, data analysis, relational databases, non-relational databases, security and architecture in applications, software testing, and algorithms \& programming 1, emphasizing practical applications and real-world problem-solving.",
-                "Guided students through hands-on projects, including the development of console-based games (Chess, Sokoban) and an analytics API for social media, fostering critical thinking, algorithmic application, and practical development skills.",
-                "Led a curriculum redesign initiative to integrate the Data Analysis course and NoSQL databases (MongoDB), guiding students through relational data model migration to NoSQL schema designs and performance optimization.",
-            ],
-            "stack": {
-                "Development": ["Python", "Java", "Javascript", "Go", "SQL", "NoSQL", "Containers", "Git"],
-                "Data Bases": ["SQL: PostgreSQL", "SQL: MySQL", "SQL: Oracle", "SQL: MS SQL Server", "NoSQL: MongoDB"],
-            },
-            "logo": "/experience/inter.jpg",
         },
         {
             "company": "Dentsu",
